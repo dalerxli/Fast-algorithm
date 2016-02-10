@@ -1,0 +1,118 @@
+[80]PETSC ERROR: ------------------------------------------------------------------------
+[82]PETSC ERROR: ------------------------------------------------------------------------
+[81]PETSC ERROR: ------------------------------------------------------------------------
+[81]PETSC ERROR: Caught signal number 7 BUS: Bus Error, possibly illegal memory access
+[81]PETSC ERROR: Try option -start_in_debugger or -on_error_attach_debugger
+[81]PETSC ERROR: or see http://www.mcs.anl.gov/petsc/documentation/faq.html#valgrind[82]PETSC ERROR: [81]PETSC ERROR: or try http://valgrind.org on GNU/linux and Apple Mac OS X to find memory corruption errors
+[81]PETSC ERROR: Caught signal number 7 BUS: Bus Error, possibly illegal memory access
+[82]PETSC ERROR: configure using --with-debugging=yes, recompile, link, and run 
+Try option -start_in_debugger or -on_error_attach_debugger
+[81]PETSC ERROR: [82]PETSC ERROR: to get more information on the crash.
+or see http://www.mcs.anl.gov/petsc/documentation/faq.html#valgrind[80]PETSC ERROR: [82]PETSC ERROR: Caught signal number 7 BUS: Bus Error, possibly illegal memory access
+or try http://valgrind.org on GNU/linux and Apple Mac OS X to find memory corruption errors
+[80]PETSC ERROR: [81]PETSC ERROR: [82]PETSC ERROR: Try option -start_in_debugger or -on_error_attach_debugger
+--------------------- Error Message ------------------------------------
+[80]PETSC ERROR: or see http://www.mcs.anl.gov/petsc/documentation/faq.html#valgrind[81]PETSC ERROR: configure using --with-debugging=yes, recompile, link, and run 
+Signal received!
+[80]PETSC ERROR: [82]PETSC ERROR: [81]PETSC ERROR: or try http://valgrind.org on GNU/linux and Apple Mac OS X to find memory corruption errors
+to get more information on the crash.
+------------------------------------------------------------------------
+[80]PETSC ERROR: [81]PETSC ERROR: configure using --with-debugging=yes, recompile, link, and run 
+Petsc Release Version 3.4.3, Oct, 15, 2013 
+[81]PETSC ERROR: [80]PETSC ERROR: to get more information on the crash.
+See docs/changes/index.html for recent updates.
+[81]PETSC ERROR: See docs/faq.html for hints about trouble shooting.
+[82]PETSC ERROR: [81]PETSC ERROR: See docs/index.html for manual pages.
+--------------------- Error Message ------------------------------------
+[81]PETSC ERROR: ------------------------------------------------------------------------
+[81]PETSC ERROR: [82]PETSC ERROR: [80]PETSC ERROR: ./scat on a arch-linux2-fftw named gcn-8-88.sdsc.edu by nhantran Thu Apr 17 19:02:27 2014
+Signal received!
+[81]PETSC ERROR: --------------------- Error Message ------------------------------------
+[82]PETSC ERROR: Libraries linked from /home/nhantran/local/src/petsc-3.4.3/arch-linux2-fftw/lib
+[80]PETSC ERROR: ------------------------------------------------------------------------
+[81]PETSC ERROR: Signal received!
+[82]PETSC ERROR: Configure run at Fri Apr 11 13:56:31 2014
+[80]PETSC ERROR: Petsc Release Version 3.4.3, Oct, 15, 2013 
+[81]PETSC ERROR: ------------------------------------------------------------------------
+[82]PETSC ERROR: Configure options --with-scalar-type=complex --with-precision=single --with-debugging=no --download-f-blas-lapack --with-fortran-kernels=1 --with-64-bit-indices=1
+[80]PETSC ERROR: See docs/changes/index.html for recent updates.
+Petsc Release Version 3.4.3, Oct, 15, 2013 
+[81]PETSC ERROR: [82]PETSC ERROR: ------------------------------------------------------------------------
+[80]PETSC ERROR: See docs/faq.html for hints about trouble shooting.
+[81]PETSC ERROR: See docs/changes/index.html for recent updates.
+[82]PETSC ERROR: User provided function() line 0 in unknown directory unknown file
+[80]PETSC ERROR: See docs/index.html for manual pages.
+See docs/faq.html for hints about trouble shooting.
+[82]PETSC ERROR: [80]PETSC ERROR: ------------------------------------------------------------------------
+See docs/index.html for manual pages.
+[80]PETSC ERROR: [82]PETSC ERROR: ------------------------------------------------------------------------
+./scat on a arch-linux2-fftw named gcn-8-88.sdsc.edu by nhantran Thu Apr 17 19:02:27 2014
+[80]PETSC ERROR: [82]PETSC ERROR: ./scat on a arch-linux2-fftw named gcn-8-88.sdsc.edu by nhantran Thu Apr 17 19:02:27 2014
+Libraries linked from /home/nhantran/local/src/petsc-3.4.3/arch-linux2-fftw/lib
+[80]PETSC ERROR: [82]PETSC ERROR: Libraries linked from /home/nhantran/local/src/petsc-3.4.3/arch-linux2-fftw/lib
+Configure run at Fri Apr 11 13:56:31 2014
+[80]PETSC ERROR: [82]PETSC ERROR: Configure run at Fri Apr 11 13:56:31 2014
+Configure options --with-scalar-type=complex --with-precision=single --with-debugging=no --download-f-blas-lapack --with-fortran-kernels=1 --with-64-bit-indices=1
+[80]PETSC ERROR: [82]PETSC ERROR: Configure options --with-scalar-type=complex --with-precision=single --with-debugging=no --download-f-blas-lapack --with-fortran-kernels=1 --with-64-bit-indices=1
+------------------------------------------------------------------------
+[80]PETSC ERROR: [82]PETSC ERROR: ------------------------------------------------------------------------
+[80]PETSC ERROR: User provided function() line 0 in unknown directory unknown file
+[cli_81]: User provided function() line 0 in unknown directory unknown file
+aborting job:
+application called MPI_Abort(MPI_COMM_WORLD, 59) - process 81
+[cli_80]: aborting job:
+application called MPI_Abort(MPI_COMM_WORLD, 59) - process 80
+[cli_82]: aborting job:
+application called MPI_Abort(MPI_COMM_WORLD, 59) - process 82
+[gcn-8-88.sdsc.edu:mpispawn_20][readline] Unexpected End-Of-File on file descriptor 8. MPI process died?
+[gcn-8-88.sdsc.edu:mpispawn_20][mtpmi_processops] Error while reading PMI socket. MPI process died?
+[83]PETSC ERROR: ------------------------------------------------------------------------
+[83]PETSC ERROR: Caught signal number 7 BUS: Bus Error, possibly illegal memory access
+[83]PETSC ERROR: Try option -start_in_debugger or -on_error_attach_debugger
+[83]PETSC ERROR: or see http://www.mcs.anl.gov/petsc/documentation/faq.html#valgrind[83]PETSC ERROR: or try http://valgrind.org on GNU/linux and Apple Mac OS X to find memory corruption errors
+[83]PETSC ERROR: configure using --with-debugging=yes, recompile, link, and run 
+[83]PETSC ERROR: to get more information on the crash.
+[83]PETSC ERROR: --------------------- Error Message ------------------------------------
+[83]PETSC ERROR: Signal received!
+[83]PETSC ERROR: ------------------------------------------------------------------------
+[83]PETSC ERROR: Petsc Release Version 3.4.3, Oct, 15, 2013 
+[83]PETSC ERROR: See docs/changes/index.html for recent updates.
+[83]PETSC ERROR: See docs/faq.html for hints about trouble shooting.
+[83]PETSC ERROR: See docs/index.html for manual pages.
+[83]PETSC ERROR: ------------------------------------------------------------------------
+[83]PETSC ERROR: ./scat on a arch-linux2-fftw named gcn-8-88.sdsc.edu by nhantran Thu Apr 17 19:02:27 2014
+[83]PETSC ERROR: Libraries linked from /home/nhantran/local/src/petsc-3.4.3/arch-linux2-fftw/lib
+[83]PETSC ERROR: Configure run at Fri Apr 11 13:56:31 2014
+[83]PETSC ERROR: Configure options --with-scalar-type=complex --with-precision=single --with-debugging=no --download-f-blas-lapack --with-fortran-kernels=1 --with-64-bit-indices=1
+[83]PETSC ERROR: ------------------------------------------------------------------------
+[83]PETSC ERROR: User provided function() line 0 in unknown directory unknown file
+[cli_83]: aborting job:
+application called MPI_Abort(MPI_COMM_WORLD, 59) - process 83
+[gcn-8-88.sdsc.edu:mpispawn_20][child_handler] MPI process (rank: 81, pid: 2744) exited with status 59
+[gcn-8-88.sdsc.edu:mpispawn_20][child_handler] MPI process (rank: 82, pid: 2745) exited with status 59
+[gcn-8-88.sdsc.edu:mpispawn_20][child_handler] MPI process (rank: 80, pid: 2743) exited with status 59
+[gcn-8-88.sdsc.edu:mpispawn_20][child_handler] MPI process (rank: 83, pid: 2746) exited with status 59
+[gcn-16-22.sdsc.edu:mpispawn_4][read_size] Unexpected End-Of-File on file descriptor 13. MPI process died?
+[gcn-16-22.sdsc.edu:mpispawn_4][read_size] Unexpected End-Of-File on file descriptor 13. MPI process died?
+[gcn-16-22.sdsc.edu:mpispawn_4][handle_mt_peer] Error while reading PMI socket. MPI process died?
+[gcn-14-54.sdsc.edu:mpispawn_0][read_size] Unexpected End-Of-File on file descriptor 13. MPI process died?
+[gcn-14-54.sdsc.edu:mpispawn_0][read_size] Unexpected End-Of-File on file descriptor 13. MPI process died?
+[gcn-14-54.sdsc.edu:mpispawn_0][handle_mt_peer] Error while reading PMI socket. MPI process died?
+[gcn-5-71.sdsc.edu:mpispawn_17][read_size] Unexpected End-Of-File on file descriptor 9. MPI process died?
+[gcn-5-71.sdsc.edu:mpispawn_17][read_size] Unexpected End-Of-File on file descriptor 9. MPI process died?
+[gcn-5-71.sdsc.edu:mpispawn_17][handle_mt_peer] Error while reading PMI socket. MPI process died?
+[gcn-15-73.sdsc.edu:mpispawn_2][read_size] Unexpected End-Of-File on file descriptor 9. MPI process died?
+[gcn-15-73.sdsc.edu:mpispawn_2][read_size] Unexpected End-Of-File on file descriptor 9. MPI process died?
+[gcn-15-73.sdsc.edu:mpispawn_2][handle_mt_peer] Error while reading PMI socket. MPI process died?
+[gcn-18-28.sdsc.edu:mpispawn_6][read_size] Unexpected End-Of-File on file descriptor 9. MPI process died?
+[gcn-18-28.sdsc.edu:mpispawn_6][read_size] Unexpected End-Of-File on file descriptor 9. MPI process died?
+[gcn-18-28.sdsc.edu:mpispawn_6][handle_mt_peer] Error while reading PMI socket. MPI process died?
+[gcn-4-45.sdsc.edu:mpispawn_15][read_size] Unexpected End-Of-File on file descriptor 9. MPI process died?
+[gcn-4-45.sdsc.edu:mpispawn_15][read_size] Unexpected End-Of-File on file descriptor 9. MPI process died?
+[gcn-4-45.sdsc.edu:mpispawn_15][handle_mt_peer] Error while reading PMI socket. MPI process died?
+[gcn-19-18.sdsc.edu:mpispawn_9][read_size] Unexpected End-Of-File on file descriptor 9. MPI process died?
+[gcn-19-18.sdsc.edu:mpispawn_9][read_size] Unexpected End-Of-File on file descriptor 9. MPI process died?
+[gcn-19-18.sdsc.edu:mpispawn_9][handle_mt_peer] Error while reading PMI socket. MPI process died?
+[gcn-9-13.sdsc.edu:mpispawn_21][read_size] Unexpected End-Of-File on file descriptor 9. MPI process died?
+[gcn-9-13.sdsc.edu:mpispawn_21][read_size] Unexpected End-Of-File on file descriptor 9. MPI process died?
+[gcn-9-13.sdsc.edu:mpispawn_21][handle_mt_peer] Error while reading PMI socket. MPI process died?

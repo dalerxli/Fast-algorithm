@@ -1,0 +1,138 @@
+\begin{thebibliography}{10}
+
+\bibitem{R278}
+A.~G. Ramm, {\em Multidimensional inverse scattering problems}, vol.~51.
+\newblock Longman Scientific \& Technical, 1992.
+
+\bibitem{R470}
+A.~G. Ramm, {\em Inverse problems: mathematical and analytical techniques with
+  applications to engineering}.
+\newblock Springer, 2005.
+
+\bibitem{Ray}
+J.~W. S.~B. Rayleigh, {\em Scientific Papers: 1887-1892}, vol.~3.
+\newblock University Press, 1902.
+
+\bibitem{R57}
+A.~G. Ramm, ``Approximate formulas for polarizability tensors and capacitances
+  of bodies of arbitrary shapes and applications,'' in {\em Doklady Acad. Sci.
+  USSR}, vol.~195, pp.~1303--1306, 1970.
+
+\bibitem{R476}
+A.~G. Ramm, {\em Wave scattering by small bodies of arbitrary shapes}.
+\newblock Springer, 2005.
+
+\bibitem{R635}
+A.~G. Ramm, ``Scattering of acoustic and electromagnetic waves by small bodies
+  of arbitrary shapes. applications to creating new engineered materials,''
+  {\em Momentum, New York}, 2013.
+
+\bibitem{R632}
+A.~G. Ramm, ``Many-body wave scattering problems in the case of small
+  scatterers,'' {\em Journal of Applied Mathematics and Computing}, vol.~41,
+  no.~1-2, pp.~473--500, 2013.
+
+\bibitem{EB2005}
+G.~V. Eleftheriades and K.~G. Balmain, {\em Negative-refraction metamaterials:
+  fundamental principles and applications}.
+\newblock John Wiley \& Sons, 2005.
+
+\bibitem{Tran}
+N.~T. Tran, ``Numerical solution of many-body wave scattering problem and
+  creating materials with a desired refraction coefficient,'' {\em The
+  International Journal of Structural Changes in Solids}, vol.~5, pp.~27--38,
+  2013.
+
+\bibitem{AR2011}
+M.~Andriychuk and A.~G. Ramm, ``Numerical solution of many-body wave scattering
+  problem for small particles and creating materials with desired refraction
+  coefficient,'' in {\em Numerical Simulations of Physical and Engineering
+  Processes} (J.~Awrejcewicz, ed.), pp.~1--28, Vienna: InTech., 2011.
+\newblock ISBN 978-953-307-620-1.
+
+\bibitem{GR1987}
+L.~Greengard and V.~Rokhlin, ``A fast algorithm for particle simulations,''
+  {\em Journal of computational physics}, vol.~73, no.~2, pp.~325--348, 1987.
+
+\bibitem{GR1997}
+L.~Greengard and V.~Rokhlin, ``A new version of the fast multipole method for
+  the laplace equation in three dimensions,'' {\em Acta numerica}, vol.~6,
+  pp.~229--269, 1997.
+
+\bibitem{DardenYorkPedersen}
+T.~Darden, D.~York, and L.~Pedersen, ``Particle mesh ewald: An n⋅ log (n)
+  method for ewald sums in large systems,'' {\em The Journal of chemical
+  physics}, vol.~98, no.~12, pp.~10089--10092, 1993.
+
+\bibitem{PhilWhite}
+J.~R. Phillips and J.~K. White, ``A precorrected-fft method for electrostatic
+  analysis of complicated 3-d structures,'' {\em Computer-Aided Design of
+  Integrated Circuits and Systems, IEEE Transactions on}, vol.~16, no.~10,
+  pp.~1059--1072, 1997.
+
+\bibitem{COCG}
+H.~A. van~der Vorst and J.~B. Melissen, ``A petrov-galerkin type method for
+  solving ax k= b, where a is symmetric complex,'' {\em Magnetics, IEEE
+  Transactions on}, vol.~26, no.~2, pp.~706--708, 1990.
+
+\bibitem{Clemens}
+M.~Clemens and T.~Weiland, ``Iterative methods for the solution of very large
+  complex symmetric linear systems of equations in electrodynamics,'' {\em
+  Technische Hochschule Darmstadt, Fachbereich}, vol.~18, 2002.
+
+\bibitem{CG}
+M.~R. Hestenes and E.~Stiefel, ``Methods of conjugate gradients for solving
+  linear systems,'' 1952.
+
+\bibitem{HE1988}
+R.~W. Hockney and J.~W. Eastwood, {\em Computer simulation using particles}.
+\newblock CRC Press, 1988.
+
+\bibitem{TDG2004}
+Z.~Tang, R.~Duraiswami, and N.~A. Gumerov, ``Fast algorithms to compute
+  matrix-vector products for pascal matrices,'' 2004.
+
+\bibitem{BTK2001}
+B.~E. Barrowes, F.~L. Teixeira, and J.~A. Kong, ``Fast algorithm for
+  matrix--vector multiply of asymmetric multilevel block-toeplitz matrices in
+  3-d scattering,'' {\em Microwave and Optical technology letters}, vol.~31,
+  no.~1, pp.~28--32, 2001.
+
+\bibitem{GMRES}
+Y.~Saad and M.~H. Schultz, ``Gmres: A generalized minimal residual algorithm
+  for solving nonsymmetric linear systems,'' {\em SIAM Journal on scientific
+  and statistical computing}, vol.~7, no.~3, pp.~856--869, 1986.
+
+\bibitem{NFFT}
+L.~Greengard and J.-Y. Lee, ``Accelerating the nonuniform fast fourier
+  transform,'' {\em SIAM review}, vol.~46, no.~3, pp.~443--454, 2004.
+
+\bibitem{KKP2009}
+J.~Keiner, S.~Kunis, and D.~Potts, ``Using nfft 3---a software library for
+  various nonequispaced fast fourier transforms,'' {\em ACM Transactions on
+  Mathematical Software (TOMS)}, vol.~36, no.~4, p.~19, 2009.
+
+\bibitem{PP2013}
+M.~Pippig and D.~Potts, ``Parallel three-dimensional nonequispaced fast fourier
+  transforms and their application to particle simulation,'' {\em SIAM Journal
+  on Scientific Computing}, vol.~35, no.~4, pp.~C411--C437, 2013.
+
+\bibitem{Petsc}
+S.~Balay, J.~Brown, K.~Buschelman, W.~D. Gropp, D.~Kaushik, M.~G. Knepley,
+  L.~C. McInnes, B.~F. Smith, and H.~Zhang, ``Petsc web page,'' 2012.
+
+\bibitem{FFTW}
+M.~Frigo and S.~G. Johnson, ``Fftw: An adaptive software architecture for the
+  fft,'' in {\em Acoustics, Speech and Signal Processing, 1998, Proceedings of
+  the 1998 IEEE International Conference on}, vol.~3, pp.~1381--1384, IEEE,
+  1998.
+
+\bibitem{Gordon}
+S.~M. Strande, P.~Cicotti, R.~S. Sinkovits, W.~S. Young, R.~Wagner,
+  M.~Tatineni, E.~Hocks, A.~Snavely, and M.~Norman, ``Gordon: design,
+  performance, and experiences deploying and supporting a data intensive
+  supercomputer,'' in {\em Proceedings of the 1st Conference of the Extreme
+  Science and Engineering Discovery Environment: Bridging from the eXtreme to
+  the campus and beyond}, p.~3, ACM, 2012.
+
+\end{thebibliography}

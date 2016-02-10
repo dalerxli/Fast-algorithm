@@ -1,0 +1,73 @@
+
+WARNING: Volume of the domain containing particles should be positive. Set the default value!
+WARNING: Distance between neighboring particles should be positive, greater than the radius of a particle, and less than the domain size. Set the default value!
+WARNING: Original refraction should not be zero. Set the default value!
+WARNING: Desired refraction should not be zero. Set the default value!
+WARNING: Distribution of particles should be positive. Set the default value!
+----------------------- SOLVING PARTICLE SCATTERING PROBLEM -----------------------
+
+Speed of wave, v:					34400
+Frequency, f:						1000
+Wave number, k:						0.182651
+Direction of plane wave, alpha:				(1, 0, 0)
+Kappa:							0.5
+Volume of the domain that contains all particles, |D|:	1
+Original refraction coefficient, n0:			1+0i
+Desired refraction coefficient, n:			-1+0.001i
+Distribution of particles, N:				1000
+Boundary impedance, zeta:				2.65481e-10+5.30962e-07i
+Radius of one particle, a:				1.000000e-04
+Distance between two neighboring particles, d:		1.000000e-03
+Number of particles, M:					1000000000 (1.000000e+09)
+Number of sub cubes after partitioning the domain, P:	8000
+Total collocation points for solving integral equation:	64000
+
+Initializing done:	Mem used: 2.21389e+07 	Elapsed time:		0:0:0
+Setting up FFT:		Mem used: 2.56696e+07 	Elapsed time:		0:0:0
+Setting up RHS done:	Mem used: 8.8363e+07 	Elapsed time:		0:0:0
+
+Computing:
+Tolerance:	1e-06
+Method:		cg
+Copy internal vector:	Mem used: 8.48425e+08 	Elapsed time:		0:0:1
+Apply FFT:		Mem used: 8.54663e+08 	Elapsed time:		0:0:29
+Pad Green cube:		Mem used: 1.37617e+09 	Elapsed time:		0:1:1
+Multiply vectors:	Mem used: 1.37617e+09 	Elapsed time:		0:1:1
+Apply iFFT:		Mem used: 8.65702e+08 	Elapsed time:		0:1:25
+Copy internal vector:	Mem used: 1.76868e+09 	Elapsed time:		0:1:29
+Assembly result:	Mem used: 8.68266e+08 	Elapsed time:		0:1:31
+Copy internal vector:	Mem used: 8.68282e+08 	Elapsed time:		0:1:35
+Apply FFT:		Mem used: 8.68483e+08 	Elapsed time:		0:2:2
+Pad Green cube:		Mem used: 1.3795e+09 	Elapsed time:		0:2:34
+Multiply vectors:	Mem used: 1.3795e+09 	Elapsed time:		0:2:34
+Apply iFFT:		Mem used: 8.68524e+08 	Elapsed time:		0:2:58
+Copy internal vector:	Mem used: 1.76993e+09 	Elapsed time:		0:3:1
+Assembly result:	Mem used: 8.68692e+08 	Elapsed time:		0:3:3
+
+Solving the original linear system (FFT):
+Norm of r=b-Ax:		1.86392e-05
+Relative error |r|/|b|:	5.89424e-10
+Iterations:		2
+Elapsed time:		0:3:7
+
+Solving the reduced linear system:
+Norm of r=b-Ax:		6.80718e-08
+Relative error |r|/|b|:	7.61066e-10
+Iterations:		2
+Elapsed time:		0:3:7
+
+Solving the integral equation:
+Norm of r=b-Ax:		1.92166e-07
+Relative error |r|/|b|:	7.59601e-10
+Iterations:		2
+Elapsed time:		0:3:11
+
+Comparing solutions:
+(Original system)   vs (Reduced system):	0.00447857
+(Integral equation) vs (Original system):	0.00219549
+(Integral equation) vs (Reduced system):	0.00228341
+(Original system)   vs (Incident field):	9.18304e-06
+
+Started on:		Wed Jan 21 22:38:35 2015
+Finished on:		Wed Jan 21 22:41:50 2015
+Elapsed time:		0:3:15

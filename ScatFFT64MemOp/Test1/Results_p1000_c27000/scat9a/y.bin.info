@@ -1,0 +1,14 @@
+#--- begin code written by PetscViewerBinary for MATLAB format ---#
+#$$ Set.filename = 'y.bin';
+#$$ fd = PetscOpenFile(Set.filename);
+#--- end code written by PetscViewerBinary for MATLAB format ---#
+
+#--- begin code written by PetscViewerBinary for MATLAB format ---#
+#$$ Set.Vec_0x84000000_1 = PetscBinaryRead(fd);
+#--- end code written by PetscViewerBinary for MATLAB format ---#
+
+-vecload_block_size 1
+#--- begin code written by PetscViewerBinary for MATLAB format ---#
+#$$ close(fd);
+#--- end code written by PetscViewerBinary for MATLAB format ---#
+

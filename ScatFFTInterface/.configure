@@ -1,0 +1,3 @@
+cd $HOME/local/src/petsc-3.4.3
+python2 './configure' '--with-scalar-type=complex' '--with-precision=double' '--with-debugging=no' '--with-fftw=1' '--download-fftw' '--download-f-blas-lapack' '--with-fortran-kernels=generic' '--with-64-bit-indices=0'
+make PETSC_DIR=/homes/nhantran/local/src/petsc-3.4.3 PETSC_ARCH=arch-linux2-fftw all

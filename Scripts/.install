@@ -1,0 +1,38 @@
+echo "Update bash profile:"
+echo "-------------------------------------------------------------"
+. /homes/nhantran/.bash_profile
+
+ln -s /opt/acml5.2.0/ifort64/lib/libacml.so /homes/nhantran/local/lib/liblapack.so
+ln -s /opt/acml5.2.0/ifort64/lib/libacml.so /homes/nhantran/local/lib/libblas.so
+
+
+
+echo "Install FFT:"
+echo "-------------------------------------------------------------"
+cd /homes/nhantran/local/src/fftw-3.3.2
+make clean
+./configure --prefix=$HOME/local
+make
+make install
+
+
+
+echo "Install MPICH:"
+echo "-------------------------------------------------------------"
+cd /homes/nhantran/local/src/mpich2-1.4.1p1
+make clean
+CC=gcc CPP=cpp FC=gfortran F77=gfortran CXX=g++ \
+         ./configure --prefix=$HOME/local --enable-fc --enable-cxx
+make
+make install
+
+
+
+echo "Compile Particle Scatering code:"
+echo "-------------------------------------------------------------"
+cd /homes/nhantran/particle_scattering
+autoreconf -iv
+cd /homes/nhantran/particle_scattering/build
+make clean
+FC=mpif90 ../configure FCFLAGS="-Wall -Wextra -O3" --disable-assert
+make

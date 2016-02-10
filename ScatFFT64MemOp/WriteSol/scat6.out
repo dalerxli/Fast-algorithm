@@ -1,0 +1,64 @@
+
+WARNING: Volume of the domain containing particles should be positive. Set the default value!
+WARNING: Original refraction should not be zero. Set the default value!
+WARNING: Desired refraction should not be zero. Set the default value!
+----------------------- SOLVING PARTICLE SCATTERING PROBLEM -----------------------
+
+Speed of wave, v:					34400
+Frequency, f:						1000
+Wave number, k:						0.182651
+Direction of plane wave, alpha:				(1, 0, 0)
+Kappa:							0.5
+Volume of the domain that contains all particles, |D|:	1
+Original refraction coefficient, n0:			1+0i
+Desired refraction coefficient, n:			-1+0.001i
+Distribution of particles, N:				1
+Boundary impedance, zeta:				2.65481e-06+0.00530961i
+Radius of one particle, a:				1.000000e-06
+Distance between two neighboring particles, d:		1.000000e-03
+Number of particles, M:					1000000 (1.000000e+06)
+Number of sub cubes after partitioning the domain, P:	1000
+Total collocation points for solving integral equation:	8000
+
+Initializing done:	Mem used: 7.10656e+06 	Elapsed time:		0:0:0
+Setting up FFT:		Mem used: 8.87603e+06 	Elapsed time:		0:0:0
+Setting up RHS done:	Mem used: 1.00311e+07 	Elapsed time:		0:0:0
+
+Computing:
+Tolerance:	0.001
+Method:		cg
+Copy internal vector:	Mem used: 2.21102e+07 	Elapsed time:		0:0:0
+Apply FFT:		Mem used: 2.47439e+07 	Elapsed time:		0:0:0
+Pad Green cube:		Mem used: 3.26124e+07 	Elapsed time:		0:0:0
+Multiply vectors:	Mem used: 3.26124e+07 	Elapsed time:		0:0:0
+Apply iFFT:		Mem used: 2.47808e+07 	Elapsed time:		0:0:0
+Copy internal vector:	Mem used: 4.44334e+07 	Elapsed time:		0:0:0
+Assembly result:	Mem used: 2.70705e+07 	Elapsed time:		0:0:0
+
+Solving the original linear system (FFT):
+Norm of r=b-Ax:		0.000172812
+Relative error |r|/|b|:	1.72812e-07
+Iterations:		1
+Elapsed time:		0:0:0
+
+Solving the reduced linear system:
+Norm of r=b-Ax:		4.31983e-05
+Relative error |r|/|b|:	1.36605e-06
+Iterations:		1
+Elapsed time:		0:0:0
+
+Solving the integral equation:
+Norm of r=b-Ax:		0.000213588
+Relative error |r|/|b|:	2.38799e-06
+Iterations:		1
+Elapsed time:		0:0:1
+
+Comparing solutions:
+(Original system)   vs (Reduced system):	0.146983
+(Integral equation) vs (Original system):	0.155634
+(Integral equation) vs (Reduced system):	0.00456633
+(Original system)   vs (Incident field):	1.95578e-08
+
+Started on:		Tue May 27 19:28:50 2014
+Finished on:		Tue May 27 19:28:51 2014
+Elapsed time:		0:0:1

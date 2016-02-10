@@ -1,0 +1,8 @@
+echo "Compile Particle Scatering code:"
+echo "-------------------------------------------------------------"
+cd /homes/nhantran/particle_scattering
+autoreconf -iv
+cd /homes/nhantran/particle_scattering/build
+make clean
+FC=mpif90.gfortran ../configure FCFLAGS="-Wall -Wextra -O3" --disable-assert
+make

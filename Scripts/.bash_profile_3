@@ -1,0 +1,3 @@
+export LD_LIBRARY_PATH=~/local/lib:/usr/lib:~/local/src:$LD_LIBRARY_PATH 
+export PATH=~/local/bin:~/local/src:$PATH
+export LIBRARY_PATH=~/local/lib:/usr/lib:$LIBRARY_PATH

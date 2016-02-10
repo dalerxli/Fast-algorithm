@@ -1,0 +1,25 @@
+function printInputs(c,f,k,kappa,VolQ,a,d,M,P,N,n,n0,u0,p,h)
+% Display the inputs arguments of wave scattering problem
+
+str = '';
+str = strcat(str, sprintf('\n Speed of light in optics: %f',c));
+str = strcat(str, sprintf('\nFrequency in optics: %f',f));
+str = strcat(str, sprintf('\nWave number k = 2pi/lambda: %f',k));
+str = strcat(str, sprintf('\nPower const with respect to the radius of particles: kappa is in [0,1]: %f',kappa));
+str = strcat(str, sprintf('\nVolume of the domain Q that contains all particles: %f',VolQ));
+str = strcat(str, sprintf('\nRadius of one particle: %f',a));
+str = strcat(str, sprintf('\nDistance between two particles: d = O(a^(1/3)): %f',d));
+str = strcat(str, sprintf('\nNumber of particles, M = O(1/a): %f',M));
+str = strcat(str, sprintf('\nNumber of small cubes after partitioning the big Q, P: %f',P));
+if(nargin > 9)
+str = strcat(str, sprintf('\nContinuous distribution function of particles: %f',N));
+str = strcat(str, sprintf('\nDesired refraction coefficient: %f',n));
+str = strcat(str, sprintf('\nOriginal refraction coefficient: %f',n0));
+str = strcat(str, sprintf('\nInitial field satisfies Helmholtz equation in R^3: %f',u0));
+str = strcat(str, sprintf('\nFunction p(x): %f',p));
+str = strcat(str, sprintf('\nFunction h(x): %f',h));
+end
+
+disp(str);
+    
+end

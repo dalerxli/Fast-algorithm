@@ -1,0 +1,21 @@
+[gcn-13-67.sdsc.edu:mpirun_rsh][signal_processor] Caught signal 15, killing job
+[gcn-13-67.sdsc.edu:mpirun_rsh][signal_processor] Caught signal 15, killing job
+[gcn-6-23.sdsc.edu:mpispawn_5][error_sighandler] Caught error: Segmentation fault (signal 11)
+bash: line 1: 14293 Segmentation fault      /bin/env LD_LIBRARY_PATH=/opt/gnu/gmp/lib:/opt/gnu/mpc/lib:/opt/gnu/gcc/lib64:/opt/gnu/mpfr/lib:/opt/gnu/lib:/opt/gnu/lib64:/opt/mvapich2/intel/ib/lib:/opt/intel/composer_xe_2013.1.117/compiler/lib/intel64:/opt/intel/composer_xe_2013.1.117/ipp/../compiler/lib/intel64:/opt/intel/composer_xe_2013.1.117/ipp/lib/intel64:/opt/intel/composer_xe_2013.1.117/compiler/lib/intel64:/opt/intel/composer_xe_2013.1.117/mkl/lib/intel64:/opt/intel/composer_xe_2013.1.117/tbb/lib/intel64//cc4.1.0_libc2.4_kernel2.6.16.21:/opt/gridengine/lib/lx26-amd64:/opt/intel/composer_xe_2013.1.117/debugger/lib/intel64:/opt/intel/composer_xe_2013.1.117/mpirt/lib/intel64 MPISPAWN_MPIRUN_MPD=0 USE_LINEAR_SSH=1 MPISPAWN_MPIRUN_HOST=gcn-13-67.sdsc.edu MPISPAWN_MPIRUN_HOSTIP=198.202.102.78 MPIRUN_RSH_LAUNCH=1 MPISPAWN_CHECKIN_PORT=50471 MPISPAWN_MPIRUN_PORT=50471 MPISPAWN_NNODES=8 MPISPAWN_GLOBAL_NPROCS=128 MPISPAWN_MPIRUN_ID=35781 MPISPAWN_ARGC=9 MPDMAN_KVS_TEMPLATE=kvs_361_gcn-13-67.sdsc.edu_35781 MPISPAWN_LOCAL_NPROCS=16 MPISPAWN_ARGV_0='./scat' MPISPAWN_ARGV_1='-n' MPISPAWN_ARGV_2='1000000000' MPISPAWN_ARGV_3='-p' MPISPAWN_ARGV_4='8000' MPISPAWN_ARGV_5='-c' MPISPAWN_ARGV_6='27000' MPISPAWN_ARGV_7='-k' MPISPAWN_ARGV_8='0.5' MPISPAWN_ARGC=9 MPISPAWN_GENERIC_ENV_COUNT=0 MPISPAWN_ID=5 MPISPAWN_WORKING_DIR=/home/nhantran/work/ScatFFT64MemOp/Norm MPISPAWN_MPIRUN_RANK_0=80 MPISPAWN_MPIRUN_RANK_1=81 MPISPAWN_MPIRUN_RANK_2=82 MPISPAWN_MPIRUN_RANK_3=83 MPISPAWN_MPIRUN_RANK_4=84 MPISPAWN_MPIRUN_RANK_5=85 MPISPAWN_MPIRUN_RANK_6=86 MPISPAWN_MPIRUN_RANK_7=87 MPISPAWN_MPIRUN_RANK_8=88 MPISPAWN_MPIRUN_RANK_9=89 MPISPAWN_MPIRUN_RANK_10=90 MPISPAWN_MPIRUN_RANK_11=91 MPISPAWN_MPIRUN_RANK_12=92 MPISPAWN_MPIRUN_RANK_13=93 MPISPAWN_MPIRUN_RANK_14=94 MPISPAWN_MPIRUN_RANK_15=95 /opt/mvapich2/intel/ib/bin/mpispawn 0
+[gcn-14-81.sdsc.edu:mpispawn_1][report_error] connect() failed: Connection refused (111)
+[gcn-13-67.sdsc.edu:mpispawn_0][read_size] Unexpected End-Of-File on file descriptor 22. MPI process died?
+[gcn-13-67.sdsc.edu:mpispawn_0][read_size] Unexpected End-Of-File on file descriptor 22. MPI process died?
+[gcn-13-67.sdsc.edu:mpispawn_0][handle_mt_peer] Error while reading PMI socket. MPI process died?
+[gcn-8-87.sdsc.edu:mpispawn_7][read_size] Unexpected End-Of-File on file descriptor 21. MPI process died?
+[gcn-8-87.sdsc.edu:mpispawn_7][read_size] Unexpected End-Of-File on file descriptor 21. MPI process died?
+[gcn-8-87.sdsc.edu:mpispawn_7][handle_mt_peer] Error while reading PMI socket. MPI process died?
+[gcn-6-71.sdsc.edu:mpispawn_6][read_size] Unexpected End-Of-File on file descriptor 21. MPI process died?
+[gcn-6-71.sdsc.edu:mpispawn_6][read_size] Unexpected End-Of-File on file descriptor 21. MPI process died?
+[gcn-6-71.sdsc.edu:mpispawn_6][handle_mt_peer] Error while reading PMI socket. MPI process died?
+[gcn-6-71.sdsc.edu:mpispawn_6][report_error] connect() failed: Connection refused (111)
+[gcn-5-72.sdsc.edu:mpispawn_4][report_error] connect() failed: Connection refused (111)
+[gcn-14-84.sdsc.edu:mpispawn_2][report_error] connect() failed: Connection refused (111)
+[gcn-5-71.sdsc.edu:mpispawn_3][read_size] Unexpected End-Of-File on file descriptor 21. MPI process died?
+[gcn-5-71.sdsc.edu:mpispawn_3][read_size] Unexpected End-Of-File on file descriptor 21. MPI process died?
+[gcn-5-71.sdsc.edu:mpispawn_3][handle_mt_peer] Error while reading PMI socket. MPI process died?
+[gcn-5-71.sdsc.edu:mpispawn_3][report_error] connect() failed: Connection refused (111)

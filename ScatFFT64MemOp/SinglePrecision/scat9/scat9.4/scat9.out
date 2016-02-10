@@ -1,0 +1,313 @@
+
+WARNING: Volume of the domain containing particles should be positive. Set the default value!
+WARNING: Particle radius should be positive and less than the domain size. Set the default value!
+WARNING: Distance between neighboring particles should be positive, greater than the radius of a particle, and less than the domain size. Set the default value!
+WARNING: Original refraction should not be zero. Set the default value!
+WARNING: Desired refraction should not be zero. Set the default value!
+WARNING: Distribution of particles should be positive. Set the default value!
+----------------------- SOLVING PARTICLE SCATTERING PROBLEM -----------------------
+
+Speed of wave, v:					34400
+Frequency, f:						1000
+Wave number, k:						0.182651
+Direction of plane wave, alpha:				(1, 0, 0)
+Kappa:							0.5
+Volume of the domain that contains all particles, |D|:	1
+Original refraction coefficient, n0:			1+0i
+Desired refraction coefficient, n:			-1+0.001i
+Distribution of particles, N:				1
+Boundary impedance, zeta:				2.65481e-06+0.00530961i
+Radius of one particle, a:				1.000000e-06
+Distance between two neighboring particles, d:		1.000000e-03
+Number of particles, M:					1000000000 (1.000000e+09)
+Number of sub cubes after partitioning the domain, P:	8000
+Total collocation points for solving integral equation:	27000
+
+Initializing done!
+Elapsed time:	0:0:0
+
+Setting up FFT .... done!
+Elapsed time:	0:0:53
+
+Setting up RHS done!
+Elapsed time:	0:0:55
+
+Computing:
+Tolerance:	0.001
+Method:		cg
+  0 KSP Residual norm 3.162277734375e+04 
+Zero vector -> Copy vector -> Assembly vector -> Apply FFT -> Multiply vectors -> Apply iFFT -> Copy results!
+  1 KSP Residual norm 5.454599261284e-01 
+
+Solving the original linear system (FFT):
+Norm of error:	0.54546
+Iterations:	1
+Elapsed time:	0:2:29
+  0 KSP Residual norm 8.944271850586e+01 
+  1 KSP Residual norm 1.578669063747e-03 
+
+Solving the reduced linear system:
+Norm of error:	0.00157867
+Iterations:	1
+Elapsed time:	0:2:30
+  0 KSP Residual norm 1.643167724609e+02 
+  1 KSP Residual norm 2.980782184750e-03 
+
+Solving the integral equation:
+Norm of error:	0.00298078
+Iterations:	1
+Elapsed time:	0:2:31
+
+Comparing solutions:
+(Original system)   vs (Reduced system):	9.1608e-05
+(Integral equation) vs (Original system):	0.00182698
+(Integral equation) vs (Reduced system):	0.0563096
+(Original system)   vs (Incident field):	8.5839e-06
+
+Started on:	Fri Apr  4 21:35:43 2014
+Finished on:	Fri Apr  4 21:38:21 2014
+Elapsed time:	0:2:38
+************************************************************************************************************************
+***             WIDEN YOUR WINDOW TO 120 CHARACTERS.  Use 'enscript -r -fCourier9' to print this document            ***
+************************************************************************************************************************
+
+---------------------------------------------- PETSc Performance Summary: ----------------------------------------------
+
+./scat on a arch-linux2-fftw named gcn-18-22.sdsc.edu with 128 processors, by nhantran Fri Apr  4 21:38:21 2014
+Using Petsc Release Version 3.4.3, Oct, 15, 2013 
+
+                         Max       Max/Min        Avg      Total 
+Time (sec):           1.578e+02      1.00021   1.578e+02
+Objects:              4.500e+01      1.00000   4.500e+01
+Flops:                9.485e+08      2.16791   9.360e+08  1.198e+11
+Flops/sec:            6.011e+06      2.16804   5.931e+06  7.592e+08
+Memory:               4.303e+09      5.57136              2.081e+11
+MPI Messages:         5.300e+02      1.03922   5.124e+02  6.559e+04
+MPI Message Lengths:  1.262e+09     10.04772   5.060e+05  3.319e+10
+MPI Reductions:       6.300e+01      1.00000
+
+Flop counting convention: 1 flop = 1 real number operation of type (multiply/divide/add/subtract)
+                            e.g., VecAXPY() for real vectors of length N --> 2N flops
+                            and VecAXPY() for complex vectors of length N --> 8N flops
+
+Summary of Stages:   ----- Time ------  ----- Flops -----  --- Messages ---  -- Message Lengths --  -- Reductions --
+                        Avg     %Total     Avg     %Total   counts   %Total     Avg         %Total   counts   %Total 
+ 0:      Main Stage: 7.3397e+00   4.7%  8.0002e+09   6.7%  0.000e+00   0.0%  0.000e+00        0.0%  2.200e+01  34.9% 
+ 1:        Conv FFT: 1.4897e+02  94.4%  1.1181e+11  93.3%  5.680e+02   0.9%  5.049e+05       99.8%  1.400e+01  22.2% 
+ 2:  Reduced system: 4.4630e-01   0.3%  3.8298e+05   0.0%  3.251e+04  49.6%  2.478e+02        0.0%  1.300e+01  20.6% 
+ 3: Integral Equation: 1.0527e+00   0.7%  1.2950e+06   0.0%  3.251e+04  49.6%  8.364e+02        0.2%  1.300e+01  20.6% 
+
+------------------------------------------------------------------------------------------------------------------------
+See the 'Profiling' chapter of the users' manual for details on interpreting output.
+Phase summary info:
+   Count: number of times phase was executed
+   Time and Flops: Max - maximum over all processors
+                   Ratio - ratio of maximum to minimum over all processors
+   Mess: number of messages sent
+   Avg. len: average message length (bytes)
+   Reduct: number of global reductions
+   Global: entire computation
+   Stage: stages of a computation. Set stages with PetscLogStagePush() and PetscLogStagePop().
+      %T - percent time in this phase         %f - percent flops in this phase
+      %M - percent messages in this phase     %L - percent message lengths in this phase
+      %R - percent reductions in this phase
+   Total Mflop/s: 10e-6 * (sum of flops over all processors)/(max time over all processors)
+------------------------------------------------------------------------------------------------------------------------
+
+
+      ##########################################################
+      #                                                        #
+      #                          WARNING!!!                    #
+      #                                                        #
+      #   The code for various complex numbers numerical       #
+      #   kernels uses C++, which generally is not well        #
+      #   optimized.  For performance that is about 4-5 times  #
+      #   faster, specify --with-fortran-kernels=1             #
+      #   when running ./configure.py.                         #
+      #                                                        #
+      ##########################################################
+
+
+Event                Count      Time (sec)     Flops                             --- Global ---  --- Stage ---   Total
+                   Max Ratio  Max     Ratio   Max  Ratio  Mess   Avg len Reduct  %T %f %M %L %R  %T %f %M %L %R Mflop/s
+------------------------------------------------------------------------------------------------------------------------
+
+--- Event Stage 0: Main Stage
+
+VecNorm                4 1.0 3.8434e+00 5.3 0.00e+00 0.0 0.0e+00 0.0e+00 4.0e+00  2  0  0  0  6  45  0  0  0 18     0
+VecSet                 3 1.0 9.2983e-05 2.5 0.00e+00 0.0 0.0e+00 0.0e+00 0.0e+00  0  0  0  0  0   0  0  0  0  0     0
+VecAXPY                1 1.0 4.6642e-02 1.9 6.25e+07 1.0 0.0e+00 0.0e+00 0.0e+00  0  7  0  0  0   1100  0  0  0 171519
+VecScatterBegin        3 1.0 1.3797e-01 1.6 0.00e+00 0.0 0.0e+00 0.0e+00 3.0e+00  0  0  0  0  5   2  0  0  0 14     0
+
+--- Event Stage 1: Conv FFT
+
+VecDot                 2 1.0 3.9596e+0067.1 1.25e+08 1.0 0.0e+00 0.0e+00 2.0e+00  1 13  0  0  3   1 14  0  0 14  4041
+VecNorm                2 1.0 9.2773e-0114.4 1.25e+08 1.0 0.0e+00 0.0e+00 2.0e+00  0 13  0  0  3   1 14  0  0 14 17246
+VecScale               1 1.0 2.6312e-0110510.3 2.55e+08 0.0 0.0e+00 0.0e+00 0.0e+00  0 27  0  0  0   0 29  0  0  0 121255
+VecCopy                5 1.0 5.2511e-01 4.4 0.00e+00 0.0 0.0e+00 0.0e+00 0.0e+00  0  0  0  0  0   0  0  0  0  0     0
+VecSet                 2 1.0 2.1975e-0115.6 0.00e+00 0.0 0.0e+00 0.0e+00 0.0e+00  0  0  0  0  0   0  0  0  0  0     0
+VecAXPY                2 1.0 1.0594e-01 2.3 1.25e+08 1.0 0.0e+00 0.0e+00 0.0e+00  0 13  0  0  0   0 14  0  0  0 151030
+VecAssemblyBegin       2 1.0 1.3565e+01 2.1 0.00e+00 0.0 5.7e+02 5.8e+07 6.0e+00  6  0  1100 10   7  0100100 43     0
+VecAssemblyEnd         2 1.0 7.8491e+00 7.7 0.00e+00 0.0 0.0e+00 0.0e+00 0.0e+00  3  0  0  0  0   3  0  0  0  0     0
+VecPointwiseMult       1 1.0 4.2064e-0135285.4 2.55e+08 0.0 0.0e+00 0.0e+00 0.0e+00  0 27  0  0  0   0 29  0  0  0 75847
+MatMult                1 1.0 9.3407e+01 1.0 2.55e+08 0.0 5.7e+02 5.8e+07 6.0e+00 58 27  1100 10  62 29100100 43   342
+KSPSetUp               1 1.0 1.4429e-01 2.3 0.00e+00 0.0 0.0e+00 0.0e+00 0.0e+00  0  0  0  0  0   0  0  0  0  0     0
+KSPSolve               1 1.0 9.4613e+01 1.0 6.30e+08 1.7 5.7e+02 5.8e+07 1.0e+01 60 67  1100 16  63 71100100 71   845
+PCSetUp                1 1.0 1.1921e-06 0.0 0.00e+00 0.0 0.0e+00 0.0e+00 0.0e+00  0  0  0  0  0   0  0  0  0  0     0
+PCApply                2 1.0 8.6787e-02 2.0 0.00e+00 0.0 0.0e+00 0.0e+00 0.0e+00  0  0  0  0  0   0  0  0  0  0     0
+
+--- Event Stage 2: Reduced system
+
+VecDot                 2 1.0 2.1964e-02 2.0 1.00e+03 1.0 0.0e+00 0.0e+00 2.0e+00  0  0  0  0  3   5 33  0  0 15     6
+VecNorm                2 1.0 2.2046e-02 2.0 1.01e+03 1.0 0.0e+00 0.0e+00 2.0e+00  0  0  0  0  3   5 33  0  0 15     6
+VecCopy                4 1.0 5.0068e-06 5.2 0.00e+00 0.0 0.0e+00 0.0e+00 0.0e+00  0  0  0  0  0   0  0  0  0  0     0
+VecSet                 2 1.0 2.1458e-06 0.0 0.00e+00 0.0 0.0e+00 0.0e+00 0.0e+00  0  0  0  0  0   0  0  0  0  0     0
+VecAXPY                2 1.0 1.1013e-021248.4 1.01e+03 1.0 0.0e+00 0.0e+00 0.0e+00  0  0  0  0  0   0 33  0  0  0    12
+VecAssemblyBegin       2 1.0 2.1332e-01 1.3 0.00e+00 0.0 3.3e+04 5.0e+02 6.0e+00  0  0 50  0 10  47  0100100 46     0
+VecAssemblyEnd         2 1.0 1.1204e-0260.9 0.00e+00 0.0 0.0e+00 0.0e+00 0.0e+00  0  0  0  0  0   0  0  0  0  0     0
+MatMult                1 1.0 2.5948e-01 1.0 0.00e+00 0.0 3.3e+04 5.0e+02 3.0e+00  0  0 50  0  5  56  0100100 23     0
+KSPSetUp               1 1.0 1.9073e-05 1.6 0.00e+00 0.0 0.0e+00 0.0e+00 0.0e+00  0  0  0  0  0   0  0  0  0  0     0
+KSPSolve               1 1.0 3.0351e-01 1.0 3.02e+03 1.0 3.3e+04 5.0e+02 7.0e+00  0  0 50  0 11  66100100100 54     1
+PCSetUp                1 1.0 1.1921e-06 0.0 0.00e+00 0.0 0.0e+00 0.0e+00 0.0e+00  0  0  0  0  0   0  0  0  0  0     0
+PCApply                2 1.0 3.0994e-06 3.2 0.00e+00 0.0 0.0e+00 0.0e+00 0.0e+00  0  0  0  0  0   0  0  0  0  0     0
+
+--- Event Stage 3: Integral Equation
+
+VecDot                 2 1.0 5.9435e-02 1.5 3.37e+03 1.0 0.0e+00 0.0e+00 2.0e+00  0  0  0  0  3   4 33  0  0 15     7
+VecNorm                2 1.0 4.3929e-02 2.1 3.38e+03 1.0 0.0e+00 0.0e+00 2.0e+00  0  0  0  0  3   4 33  0  0 15    10
+VecCopy                4 1.0 1.0014e-0510.5 0.00e+00 0.0 0.0e+00 0.0e+00 0.0e+00  0  0  0  0  0   0  0  0  0  0     0
+VecSet                 2 1.0 3.8147e-06 0.0 0.00e+00 0.0 0.0e+00 0.0e+00 0.0e+00  0  0  0  0  0   0  0  0  0  0     0
+VecAXPY                2 1.0 1.9073e-05 1.9 3.38e+03 1.0 0.0e+00 0.0e+00 0.0e+00  0  0  0  0  0   0 33  0  0  0 22649
+VecAssemblyBegin       2 1.0 5.1413e-01 6.0 0.00e+00 0.0 3.3e+04 1.7e+03 6.0e+00  0  0 50  0 10  44  0100100 46     0
+VecAssemblyEnd         2 1.0 1.3249e-03 2.8 0.00e+00 0.0 0.0e+00 0.0e+00 0.0e+00  0  0  0  0  0   0  0  0  0  0     0
+MatMult                1 1.0 8.6658e-01 1.0 0.00e+00 0.0 3.3e+04 1.7e+03 3.0e+00  1  0 50  0  5  81  0100100 23     0
+KSPSetUp               1 1.0 1.9789e-05 1.8 0.00e+00 0.0 0.0e+00 0.0e+00 0.0e+00  0  0  0  0  0   0  0  0  0  0     0
+KSPSolve               1 1.0 9.5095e-01 1.0 1.01e+04 1.0 3.3e+04 1.7e+03 7.0e+00  1  0 50  0 11  90100100100 54     1
+PCSetUp                1 1.0 1.1921e-06 0.0 0.00e+00 0.0 0.0e+00 0.0e+00 0.0e+00  0  0  0  0  0   0  0  0  0  0     0
+PCApply                2 1.0 5.0068e-06 5.2 0.00e+00 0.0 0.0e+00 0.0e+00 0.0e+00  0  0  0  0  0   0  0  0  0  0     0
+------------------------------------------------------------------------------------------------------------------------
+
+Memory usage is given in bytes:
+
+Object Type          Creations   Destructions     Memory  Descendants' Mem.
+Reports information only for process 0.
+
+--- Event Stage 0: Main Stage
+
+              Vector     9             26    823880512     0
+      Vector Scatter     3              3         2076     0
+              Matrix     0              3         7752     0
+       Krylov Solver     0              3         3912     0
+      Preconditioner     0              3         2544     0
+           Index Set     6              6         4992     0
+
+--- Event Stage 1: Conv FFT
+
+              Vector     7              0            0     0
+              Matrix     1              0            0     0
+       Krylov Solver     1              0            0     0
+      Preconditioner     1              0            0     0
+              Viewer     1              0            0     0
+
+--- Event Stage 2: Reduced system
+
+              Vector     5              0            0     0
+              Matrix     1              0            0     0
+       Krylov Solver     1              0            0     0
+      Preconditioner     1              0            0     0
+
+--- Event Stage 3: Integral Equation
+
+              Vector     5              0            0     0
+              Matrix     1              0            0     0
+       Krylov Solver     1              0            0     0
+      Preconditioner     1              0            0     0
+========================================================================================================================
+Average time to get PetscTime(): 9.53674e-08
+Average time for MPI_Barrier(): 0.0106108
+Average time for zero size MPI_Send(): 0.00029739
+#PETSc Option Table entries:
+-c 27000
+-k 0.5
+-ksp_monitor
+-ksp_type cg
+-log_summary
+-malloc_log
+-n 1000000000
+-p 8000
+#End of PETSc Option Table entries
+Compiled without FORTRAN kernels
+Compiled with single precision PetscScalar and PetscReal
+Compiled with full precision matrices (default)
+sizeof(short) 2 sizeof(int) 4 sizeof(long) 8 sizeof(void*) 8 sizeof(PetscScalar) 8 sizeof(PetscInt) 8
+Configure run at: Sat Mar 22 19:43:57 2014
+Configure options: --with-scalar-type=complex --with-precision=single --with-debugging=no --download-f-blas-lapack --with-fortran-kernels=generic --with-64-bit-indices=1
+-----------------------------------------
+Libraries compiled on Sat Mar 22 19:43:57 2014 on gordon-ln2.sdsc.edu 
+Machine characteristics: Linux-2.6.32-358.6.2.el6.x86_64-x86_64-with-centos-6.4-Final
+Using PETSc directory: /home/nhantran/local/src/petsc-3.4.3
+Using PETSc arch: arch-linux2-fftw
+-----------------------------------------
+
+Using C compiler: mpicc  -fPIC -wd1572 -O3  ${COPTFLAGS} ${CFLAGS}
+Using Fortran compiler: mpif90  -fPIC -O3   ${FOPTFLAGS} ${FFLAGS} 
+-----------------------------------------
+
+Using include paths: -I/home/nhantran/local/src/petsc-3.4.3/arch-linux2-fftw/include -I/home/nhantran/local/src/petsc-3.4.3/include -I/home/nhantran/local/src/petsc-3.4.3/include -I/home/nhantran/local/src/petsc-3.4.3/arch-linux2-fftw/include -I/opt/mvapich2/intel/ib/include
+-----------------------------------------
+
+Using C linker: mpicc
+Using Fortran linker: mpif90
+Using libraries: -Wl,-rpath,/home/nhantran/local/src/petsc-3.4.3/arch-linux2-fftw/lib -L/home/nhantran/local/src/petsc-3.4.3/arch-linux2-fftw/lib -lpetsc -Wl,-rpath,/home/nhantran/local/src/petsc-3.4.3/arch-linux2-fftw/lib -L/home/nhantran/local/src/petsc-3.4.3/arch-linux2-fftw/lib -lflapack -lfblas -lX11 -lpthread -Wl,-rpath,/opt/mvapich2/intel/ib/lib -L/opt/mvapich2/intel/ib/lib -Wl,-rpath,/opt/intel/composer_xe_2013.1.117/compiler/lib/intel64 -L/opt/intel/composer_xe_2013.1.117/compiler/lib/intel64 -Wl,-rpath,/opt/intel/composer_xe_2013.1.117/ipp/lib/intel64 -L/opt/intel/composer_xe_2013.1.117/ipp/lib/intel64 -Wl,-rpath,/opt/intel/composer_xe_2013.1.117/mkl/lib/intel64 -L/opt/intel/composer_xe_2013.1.117/mkl/lib/intel64 -Wl,-rpath,/opt/intel/composer_xe_2013.1.117/tbb/lib/intel64/cc4.1.0_libc2.4_kernel2.6.16.21 -L/opt/intel/composer_xe_2013.1.117/tbb/lib/intel64/cc4.1.0_libc2.4_kernel2.6.16.21 -Wl,-rpath,/opt/gridengine/lib/lx26-amd64 -L/opt/gridengine/lib/lx26-amd64 -Wl,-rpath,/opt/intel/composer_xe_2013.1.117/debugger/lib/intel64 -L/opt/intel/composer_xe_2013.1.117/debugger/lib/intel64 -Wl,-rpath,/opt/intel/composer_xe_2013.1.117/mpirt/lib/intel64 -L/opt/intel/composer_xe_2013.1.117/mpirt/lib/intel64 -Wl,-rpath,/opt/gnu/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.8.1 -L/opt/gnu/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.8.1 -Wl,-rpath,/opt/gnu/gcc/lib64 -L/opt/gnu/gcc/lib64 -Wl,-rpath,/opt/gnu/gcc/lib -L/opt/gnu/gcc/lib -lmpichf90 -lifport -lifcore -lm -lm -lmpichcxx -ldl -lmpich -lopa -lmpl -libmad -lrdmacm -libumad -libverbs -lrt -lhwloc -llimic2 -lpthread -limf -lsvml -lirng -lipgo -ldecimal -lcilkrts -lstdc++ -lgcc_s -lirc -lirc_s -ldl 
+-----------------------------------------
+
+[0] Maximum memory PetscMalloc()ed 3909223344 maximum size of entire process 1379016704
+[0] Memory usage sorted by function
+[0] 8 12864 ClassPerfLogCreate()
+[0] 8 38464 EventPerfLogCreate()
+[0] 4 76800 EventPerfLogEnsureSize()
+[0] 2 1616 EventRegLogCreate()
+[0] 1 3200 EventRegLogRegister()
+[0] 18 4896 ISCreate()
+[0] 6 192 ISCreate_Stride()
+[0] 9 3744 KSPCreate()
+[0] 3 192 KSPCreate_CG()
+[0] 3 48 KSPDefaultConvergedCreate()
+[0] 9 7392 MatCreate()
+[0] 3 432 MatCreate_Shell()
+[0] 8 256 MatRegisterBaseName()
+[0] 9 2592 PCCreate()
+[0] 2 1616 PetscClassRegLogCreate()
+[0] 4 128 PetscCommDuplicate()
+[0] 138 4416 PetscFunctionListAdd_Private()
+[0] 1 800 PetscHeaderCreate_Private()
+[0] 2 528 PetscIntStackCreate()
+[0] 32 3072 PetscLayoutCreate()
+[0] 13 10448 PetscLayoutSetUp()
+[0] 4 64 PetscLogView()
+[0] 12 24576 PetscMaxSum()
+[0] 34 2176 PetscObjectComposedDataIncreaseReal()
+[0] 12 240 PetscOptionsGetEList()
+[0] 1 32 PetscPushSignalHandler()
+[0] 2 1328 PetscStageLogCreate()
+[0] 391 7424 PetscStrallocpy()
+[0] 2 384 PetscThreadCommCreate()
+[0] 5 2096 PetscThreadCommReductionCreate()
+[0] 1 16 PetscThreadCommSetAffinities()
+[0] 3 2720 PetscThreadCommWorldInitialize()
+[0] 1 16 PetscViewerASCIIOpen()
+[0] 3 720 PetscViewerCreate()
+[0] 1 80 PetscViewerCreate_ASCII()
+[0] 1 62500000 ScatSMatMultFFT()
+[0] 6 6240 VecAssemblyBegin_MPI()
+[0] 78 41600 VecCreate()
+[0] 45 823495568 VecCreate_MPI_Private()
+[0] 3 344000 VecCreate_Seq()
+[0] 3 96 VecCreate_Seq_Private()
+[0] 3 96 VecDuplicateVecs_Default()
+[0] 1 31952016 VecGetArray3d()
+[0] 12 5472 VecScatterCreate()
+[0] 46 47104 VecStashCreate_Private()
+[0] 111 4196352176 VecStashExpand_Private()
+[0] 57 2346861216 VecStashScatterBegin_Private()
+[0] 3 20960 VecStashScatterEnd_Private()

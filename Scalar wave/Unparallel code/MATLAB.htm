@@ -1,0 +1,883 @@
+
+<!-- saved from url=(0051)http://homepages.ulb.ac.be/~dgonze/INFO/matlab.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1"><title>MATLAB</title></head>
+<body bgcolor="#ffffff">
+
+
+<h1><font color="#993366">MATLAB</font></h1>
+
+<hr noshade="noshade" size="1">
+
+
+<h2>Input/Output files</h2>
+
+<b>To load data from a file:</b>
+
+<font color="blue"><pre>x=load('myfile.dat');   % load content of myfile.dat in an array x</pre></font>
+
+<br><b>To load data from different files:</b>
+
+<font color="blue"><pre>dir;              % display all files in the current directory (like ls)
+f=dir;            % creates a structured array of "files" objects 
+f=dir('*.dat');   % creates an structured array of data files objects 
+f(1).name;        % return the name of the first file
+</pre></font>
+<font color="blue"><pre>for i=1:length(f);    % for each file 
+  x=load(f(i).name);  % load each file i
+  myfunction(x);      % do something with x
+end
+</pre></font>
+
+
+<br><b>To save data in a file:</b>
+
+<font color="blue"><pre>save myfile var1 var2 ... -ASCII </pre></font>
+or
+<font color="blue"><pre>save('myfile', 'var1', 'var2',...,'-ASCII')
+</pre></font>
+
+or (if you want to index your file)
+
+<font color="blue"><pre>index=i;
+myfile = sprintf('file%d.dat',index);
+save(myfile, 'var1', 'var2',...,'-ASCII')
+</pre></font>
+
+or (if you want to concatenate strings)
+
+<font color="blue"><pre>fileext='dat';
+myfile = sprintf('myfile.%s',fileext);
+save(myfile, 'var1', 'var2',...,'-ASCII')
+</pre></font>
+
+
+<br><b>To write (formatted) text in a file:</b>
+
+<font color="blue"><pre>fID=fopen('mytextfile.txt','w'); % file ID ('w' means "open or create new file for Writing")
+
+myformat='%s\t%g\n';             % my format
+
+D1='The value of pi is:';        % string data
+D2=3.14159;                      % numeric data
+
+fprintf(fID,myformat,D1,D2);     % write in file
+
+fclose(fID);                     % close file  				
+
+type mytextfile.txt;             % display the content of the file
+</pre></font>
+
+
+<br><b>To save figures in a file:</b>
+
+<br>
+
+<font color="blue"><pre>nfig=1; % number of the figure
+set(nfig,'PaperPositionMode','auto'); % to keep aspect ratio when saving in file
+</pre></font>
+
+
+<font color="blue"><pre>saveas(gca,'myfigure.jpg','jpg');    % save current figure as jpg file</pre></font>
+or
+<font color="blue"><pre>saveas(gca,'myfigure.eps','eps');    % save current figure as eps file</pre></font>
+
+<br>
+
+<hr noshade="noshade" size="1">
+
+<h2>Random numbers</h2>
+
+<b>To initialize the randomizer:</b>
+<font color="blue"><pre>rand('state',sum(100*clock));   
+</pre></font>
+<b>To generate...</b>
+<br><br>
+one random value from a uniform distribution between 0 and 1:
+<font color="blue"><pre>z=rand()
+</pre></font>
+a 5x5 matrix of random values from a uniform distribution between 0 and 1:
+<font color="blue"><pre>z=rand(5)
+</pre></font>
+a vector of 5 random values from a uniform distribution between 0 and 1:
+<font color="blue"><pre>z=rand(5,1)
+</pre></font>
+a vector of 5 random values from a uniform distribution between 0 and 10:
+<font color="blue"><pre>z=10.*rand(5,1)
+</pre></font>
+a vector of 5 random integer values from a uniform distribution between 0 and 10:
+<font color="blue"><pre>z=ceil(10.*rand(5,1))
+</pre></font>
+a vector of 5 random values from a normal distribution of mean 0 and standard devation 1:
+<font color="blue"><pre>z=randn(5,1)
+</pre></font>
+a vector of N random values from a normal distribution of mean m and standard devation s:
+<font color="blue"><pre>m=5;     % mean 
+s=2;     % standard deviation
+N=100;   % number of numbers to generate
+z=m+s.*randn(1,N);
+</pre></font>
+a vector of N random values from a log-normal distribution of mean m and standard devation s:
+<font color="blue"><pre>m=5;     % mean 
+s=2;     % standard deviation
+N=100;   % number of numbers to generate
+mn=log(m^2/sqrt(s^2+m^2));
+sn=sqrt(log(s^2/m^2+1));
+z=exp(mn+sn.*randn(1,N));
+</pre></font>
+a random number from a binomial distribution with parameters specified by the number of trials, N, and probability of success for each trial, p:
+<font color="blue"><pre>N=100;    % number of trials
+p=0.7;    % probability of success
+z=binornd(N,p);
+</pre></font>
+a random permutation of the integers 1:n
+<font color="blue"><pre>z=randperm(8)
+</pre></font>
+a vector of N=100 numbers from a gamma distribution with mean m=5 and standard deviation s=5:
+<font color="blue"><pre>m=5;        % mean
+s=5;        % st dev
+N=100;      % number of random numbers to generate
+a=m/s ;     % shape parameter
+b=m^2/s ;   % scale parameter
+x=gamrnd(a,b,[1 N]);
+</pre></font>
+
+<br>
+
+
+
+
+<hr noshade="noshade" size="1">
+
+<h2>Solving equations</h2>
+
+<b>To solve equations symbolically</b>
+
+<font color="blue"><pre>eq1=sprintf('a-(b+1)*x+x^2*y');
+eq2=sprintf('b*x-x^2*y');
+
+sol=solve(eq1,eq2,'x','y');
+
+sol.x
+sol.y
+
+</pre></font>
+
+<b>To solve equations numerically</b>
+
+<font color="blue"><pre>a=2;
+b=5.2;
+
+eq1=sprintf('%d-(%d+1)*x+x^2*y',a,b);
+eq2=sprintf('%d*x-x^2*y',b);
+
+sol=solve(eq1,eq2,'x','y');
+
+sol.x
+sol.y
+
+</pre></font>
+
+<b>Selecting real solutions</b>
+
+<font color="blue"><pre>eq1=sprintf('2/(1+Y^4)-X=0');
+eq2=sprintf('2/(1+X^4)-Y=0');
+
+sol=solve(eq1,eq2,'X','Y');
+
+sol.X
+sol.Y
+
+x=eval(sol.X)
+y=eval(sol.Y)
+
+k=find(imag(x)==0);
+
+sol=[x(k) y(k)]
+
+</pre></font>
+
+<br>
+
+
+
+<hr noshade="noshade" size="1">
+
+<h2>Fitting</h2>
+
+<b>Polynomial fit</b>
+
+<font color="blue"><pre>%%% Data
+
+x=[0 1.6 2.6 4.1 5.1 6.5 7.4 8.9 9.6];
+y=[-10.3 0.2 13.5 23 41.9 45.7 60.1 78.0 88.2];
+
+%%% Correlation coefficient (if R close to 1, linear fit OK)
+
+R=corrcoef(x,y);
+R(1,2)
+
+%%% Fitting
+
+n=1;      % degree of the polynom (n=1 &lt;=&gt; linear fit)
+p=polyfit(x,y,n)
+
+%%% Write the function
+
+fprintf('Best fit: y = %g x + %g nn',p(1),p(2))
+
+%%% Figure
+
+xfit=x;
+yfit=p(1).*x +p(2);
+
+plot(x,y,'bo',xfit,yfit,'r-');  
+
+xlabel('x');
+ylabel('y');
+legend('data','fit',2)
+
+
+</pre></font>
+
+<b>Exponential fit</b>
+
+<font color="blue"><pre>%%% Data
+
+t = [1:8] ; 
+x = [629 537 460 375 334 286 249 227] ;
+
+%%% Define your exponential function
+
+fh = @(t,p) p(1) + p(2)*exp(-t./p(3))
+
+%%% Error function (to be minimized)
+
+errfh = @(p,x,y) sum((y(:)-fh(x(:),p)).^2)
+
+%%% Initial guess of the exponential parameters
+
+p0 = [mean(x) (max(x)-min(x)) (max(t) - min(t))/2];
+
+%%% Search for solution
+
+P = fminsearch(errfh,p0,[],t,x) 
+
+%%% Write the function
+
+fprintf('Best fit: x = %g + %g  exp(-t/%g) nn',P(1),P(2),P(3))
+
+%%% Plot the result
+
+tt=[1:0.1:8];
+plot(t,x,'bo',tt,fh(tt,P),'r-')
+xlabel('t')
+ylabel('x')
+legend('data','fit')
+
+</pre></font>
+
+
+
+
+
+
+<hr noshade="noshade" size="1">
+
+<h2>Figures</h2>
+
+<table width="550">
+
+<tbody><tr><td bgcolor="AAAAAA" colspan="2"><b>Time series plot</b></td></tr>
+<tr><td valign="top" bgcolor="DDDDDD"><img src="./MATLAB_files/fig1.jpg" width="200"></td>
+    <td valign="top" bgcolor="DDDDDD"><font color="blue"><pre>  T=[0:5]    % this generates a vecteur T with number 0 to 5
+  D=rand(6)  % this generates a 6x6 matrix with random number between 0 and 1
+  figure(1)
+  set(figure(1),'Position', [400 400 500 300]);  % size of the figure
+  clf;   % to clean the figure
+  plot(T,D(:,2),'b',T,D(:,3),'r.',T,D(:,4),'g--');
+  xlabel('Time (h)','fontsize',18);
+  ylabel('Variable (nM)','fontsize',18);
+  xlim([0 5]);
+  ylim([0 1]);
+  title('Here is a useless plot')
+  legend('x','y','z');
+  set(gca,'xtick',[0:0.5:6],'fontsize',14);
+  set(findobj(gca,'Type','line','color','blue'),'LineWidth',2);
+</pre></font></td></tr>
+
+
+<tr><td bgcolor="AAAAAA" colspan="2"><b>Symbols plot</b></td></tr>
+<tr><td valign="top" bgcolor="DDDDDD"><img src="./MATLAB_files/fig3.jpg" width="200"></td>
+    <td valign="top" bgcolor="DDDDDD"><font color="blue"><pre>  figure(3)
+  clf;
+  T=[1:5];
+  X=rand(5,1);
+  Y=rand(5,1);
+  Z=rand(5,1);
+  plot(X,X,'rs','LineWidth',1,'MarkerEdgeColor','k','MarkerFaceColor','b','MarkerSize',10)
+  hold on;
+  plot(X,Y,'o','LineWidth',1,'MarkerEdgeColor','r','MarkerFaceColor','r','MarkerSize',15)
+  hold on;
+  plot(X,Z,'^','LineWidth',2,'MarkerEdgeColor','k','MarkerFaceColor','g','MarkerSize',15)
+  Y=rand(5,1)
+  grid on;
+</pre></font></td></tr>
+
+
+<tr><td bgcolor="AAAAAA" colspan="2"><b>Error bar</b></td></tr>
+<tr><td valign="top" bgcolor="DDDDDD"><img src="./MATLAB_files/fig14.jpg" width="200"></td>
+    <td valign="top" bgcolor="DDDDDD"><font color="blue"><pre>    figure(1)
+    clf;
+    x=[0:0.5:10];
+    y=sin(x);
+    e=rand(1,length(x))/5
+    errorbar(x,y,e)
+    hold on;
+    plot([0 10],[0 0],'k--')
+    text(8,-0.15,'base line','fontsize',14,'HorizontalAlignment','center');
+    text(1,1.25,'maximum','fontsize',14,'HorizontalAlignment','left');
+    text(6,-1.25,'minimum','fontsize',14,'HorizontalAlignment','right');
+    xlim([-0.2 10.2]);
+    ylim([-1.5 1.5]);
+    box on;
+</pre></font></td></tr>
+
+
+<tr><td bgcolor="AAAAAA" colspan="2"><b>Double-y plot</b></td></tr>
+<tr><td valign="top" bgcolor="DDDDDD"><img src="./MATLAB_files/fig21.jpg" width="200"></td>
+    <td valign="top" bgcolor="DDDDDD"><font color="blue"><pre>    figure(1);
+    clf;
+
+    x1=[0:0.5:10];
+    y1=x1.^2;
+    x2=[0.2:0.2:20];
+    y2=1./x2;
+
+    [AX,H1,H2]=plotyy(x1,y1,x2,y2);
+
+    box off;
+    set(get(AX(1),'Ylabel'),'String','Square (x^2)','fontsize',18)
+    set(get(AX(2),'Ylabel'),'String','Inverse (1/x)','fontsize',18)
+    set(H1,'LineWidth',2)
+    set(H2,'LineWidth',2,'LineStyle','--')
+    xlabel('x','fontsize',18);
+    set(AX(1),'YLim',[0 100],'YTick',[0:10:100],'fontsize',15)
+    set(AX(2),'YLim',[0 1],'YTick',[0:0.2:1],'fontsize',15)
+    set(AX(1),'xlim',[0 10]);
+    set(AX(2),'xlim',[0 10]);
+</pre></font></td></tr>
+
+
+
+<tr><td bgcolor="AAAAAA" colspan="2"><b>Bar plot</b></td></tr>
+<tr><td valign="top" bgcolor="DDDDDD"><img src="./MATLAB_files/fig4.jpg" width="200"></td>
+    <td valign="top" bgcolor="DDDDDD"><font color="blue"><pre>  figure(4)
+  X=[1:10];
+  Y=rand(10,1);
+  bar(X,Y,'r');
+  xlabel('X','fontsize',18);
+  ylabel('Y','fontsize',18);
+</pre></font></td></tr>
+
+<tr><td bgcolor="AAAAAA" colspan="2"><b>Histogram</b></td></tr>
+<tr><td valign="top" bgcolor="DDDDDD"><img src="./MATLAB_files/fig2.jpg" width="200"></td>
+    <td valign="top" bgcolor="DDDDDD"><font color="blue"><pre>  D=randn(50,1)  % generates a vector with 50 numbers normally distributed
+  figure(2)
+  bin=[-4:0.2:4];
+  hist(D,bin);
+  xlabel('Value','fontsize',18);
+  ylabel('Occurrence','fontsize',18);
+  xlim([-4 4]);
+  ylim([0 8]);
+  set(findobj(gca,'Type','patch'),'FaceColor','b','EdgeColor','k')
+  text(-3,6,'this is a blue histogram')
+</pre></font></td></tr>
+
+<tr><td bgcolor="AAAAAA" colspan="2"><b>Histogram with several populations</b></td></tr>
+<tr><td valign="top" bgcolor="DDDDDD"><img src="./MATLAB_files/fig8.jpg" width="200"></td>
+    <td valign="top" bgcolor="DDDDDD"><font color="blue"><pre>  figure(2)
+  D1=randn(1000,1);  % generates a vector with 1000 random numbers normally distributed
+  D2=2*randn(1000,1)+3; % generates a vector with 1000 random numbers normally distributed
+  x=[-5:0.5:10];
+  y1=hist(D1,x);
+  y2=hist(D2,x);
+  D=[y1; y2];
+  bar(x,D',1.4);
+  xlabel('Value','fontsize',18);
+  ylabel('Occurrence','fontsize',18);
+</pre></font></td></tr>
+
+
+<tr><td bgcolor="AAAAAA" colspan="2"><b>Fill polygons</b></td></tr>
+<tr><td valign="top" bgcolor="DDDDDD"><img src="./MATLAB_files/fig6.jpg" width="200"></td>
+    <td valign="top" bgcolor="DDDDDD"><font color="blue"><pre>  x = [1 2 4 7 9 4];
+  y = [4 9 9 7 3 1];
+  col=[0.2 0.6 0.2]; % colour (RGB)
+  fill(x,y,col); 
+  xlim([0 10]);
+  ylim([0 10]);
+  set(gca,'XTickLabel',{''})  % to remove x tick labels
+  set(gca,'YTickLabel',{''})  % to remove y tick labels
+  set(gca,'XTick',[])         % to remove x ticks
+  set(gca,'YTick',[])         % to remove y ticks
+  %axis off;                  % to remove the box
+</pre></font></td></tr>
+
+
+<tr><td bgcolor="AAAAAA" colspan="2"><b>Color map</b></td></tr>
+<tr><td valign="top" bgcolor="DDDDDD"><img src="./MATLAB_files/fig7.jpg" width="200"></td>
+    <td valign="top" bgcolor="DDDDDD"><font color="blue"><pre>  X=rand(10);
+  imagesc(X);
+  colormap(jet);    % instead of 'jet' try 'gray', 'bone', 'spring',...
+                    % &gt;&gt;help colormap for more color options.
+  set(gca,'XTickLabel',{''})  % to remove x tick labels
+  set(gca,'YTickLabel',{''})  % to remove y tick labels
+  set(gca,'XTick',[])         % to remove x ticks
+  set(gca,'YTick',[])         % to remove y ticks
+</pre></font></td></tr>
+
+
+<tr><td bgcolor="AAAAAA" colspan="2"><b>Pie chart</b></td></tr>
+<tr><td valign="top" bgcolor="DDDDDD"><img src="./MATLAB_files/mypie.jpg" width="200"></td>
+    <td valign="top" bgcolor="DDDDDD"><font color="blue"><pre>  x=[30 10 60 50];
+  explode = [0 0 0 0];
+  %explode = [0 2 0 0];
+  labels = {'Label 1', 'Label 2', 'Label 3', 'Label 4'};
+  %labels = [];     % to indicate percents instead of labels
+
+  h=pie(x,explode,labels);   % try pie3 for 3D pie...
+                             % NB: if no labels, the percentage are indicated. 
+			     
+  %set(h(2:2:8),'fontsize',16); % sise of the labels
+  set(h(2),'fontsize',16,'position',[-0.4 0.5],'color','w');   % label 1
+  set(h(4),'fontsize',16,'position',[-0.7 0.07],'color','k');  % label 2
+  set(h(6),'fontsize',16,'position',[-0.1 -0.5],'color','k');  % label 3
+  set(h(8),'fontsize',16,'position',[0.4 0.35],'color','w');   % label 4
+
+  colormap jet
+  %set(h(1),'facecolor','m');   % change color of piece 1 into magenta
+
+  title('Example of pie chart','fontsize',18)
+  %set(gca,'position',[0.13 0.11 0.775 0.815])  % to change plot position 
+  legend('lab1','lab2','lab3','lab4','location',[0.75 0.7 0.2 0.2])
+</pre></font></td></tr>
+
+
+
+<tr><td bgcolor="AAAAAA" colspan="2"><b>Plot 3D</b></td></tr>
+<tr><td valign="top" bgcolor="DDDDDD"><img src="./MATLAB_files/fig11.jpg" width="200"></td>
+    <td valign="top" bgcolor="DDDDDD"><font color="blue"><pre>  figure(8)
+  clf;
+
+  x=[0:0.01:40];
+
+  plot3(x.*sin(x),x.*cos(x),x,'b')
+
+  box on;
+  
+</pre></font></td></tr>
+
+<tr><td bgcolor="AAAAAA" colspan="2"><b>Surface</b></td></tr>
+<tr><td valign="top" bgcolor="DDDDDD"><img src="./MATLAB_files/fig12.jpg" width="200"></td>
+    <td valign="top" bgcolor="DDDDDD"><font color="blue"><pre>  x=[1:0.2:10];
+  y=[1:0.2:10];
+
+  for i=1:length(x)
+  for j=1:length(y)
+    z(i,j)=1./x(i).*sin(y(j));
+  end
+  end
+
+  figure(2);
+  clf;
+  surf(x,y,z);  
+</pre></font></td></tr>
+
+
+<tr><td bgcolor="AAAAAA" colspan="2"><b>Contour</b></td></tr>
+<tr><td valign="top" bgcolor="DDDDDD"><img src="./MATLAB_files/fig17.jpg" width="200"></td>
+    <td valign="top" bgcolor="DDDDDD"><font color="blue"><pre>  z=peaks;  % demo data
+  
+  figure(2)
+  clf;
+  n=8; % number of contour plot (not mandatory)
+  contour(z,n,'linewidth',2);
+
+  %%% To write level on the contour lines:
+  % [C,h]=contour(z,n,'linewidth',2)
+  % set(h,'ShowText','on','TextStep',get(h,'LevelStep')*2)
+
+  %%% Alternative representations:
+  % contourf(z,n)   % to fill the regions between the contours
+  % contour3(z,n)   % to draw the contours in 3D
+</pre></font></td></tr>
+
+<tr><td bgcolor="AAAAAA" colspan="2"><b>Surface + contour</b></td></tr>
+<tr><td valign="top" bgcolor="DDDDDD"><img src="./MATLAB_files/fig19.jpg" width="200"></td>
+    <td valign="top" bgcolor="DDDDDD"><font color="blue"><pre>  z=peaks;  % demo data
+
+  figure(4)
+  clf;
+  h=surfc(z);
+  clev=-8;   % z-level of the contour lines
+  for n=2:numel(h)
+     z=get(h(n),'zdata');
+     set(h(n),'zdata',ones(size(z))*clev); % Contours are draw at z=clev
+  end
+</pre></font></td></tr>
+
+
+<tr><td bgcolor="AAAAAA" colspan="2"><b>Density</b></td></tr>
+<tr><td valign="top" bgcolor="DDDDDD"><img src="./MATLAB_files/fig18.jpg" width="200"></td>
+    <td valign="top" bgcolor="DDDDDD"><font color="blue"><pre>  z=peaks;  % demo data
+  
+  figure(3)
+  clf;
+  niter=1;
+  method='bilinear';
+  y=interp2(z,niter,method);
+  imagesc(y);
+</pre></font></td></tr>
+
+
+
+
+<tr><td bgcolor="AAAAAA" colspan="2"><b>Geometrical shapes</b></td></tr>
+<tr><td valign="top" bgcolor="DDDDDD"><img src="./MATLAB_files/shapes.png" width="200"></td>
+    <td valign="top" bgcolor="DDDDDD"><font color="blue"><pre>  %%% background colors
+
+  whitebg([1.0 1.0 0.6])         % background color (in+out plot)
+  set(gcf,'Color',[0,0.4,0.4])    % background color (out plot only)
+
+  %%% circle
+
+  circle = rsmak('circle');
+  fnplt(circle)
+  set(findobj(gca,'Color','blue'),'Color','r','LineWidth',2)
+
+  xlim([-1.5 5])
+  ylim([-1.5 5])
+  axis square
+
+  %%% ellipse
+
+  hold on;
+  S=[2,1];                                    % stretch
+  T=[2;3];                                    % translation
+  a=35*2*pi/360;                              % rotation angle
+  R=[cos(a) sin(a);sin(a) -cos(a)];           % rotation matrix
+  ellipse = fncmb(circle,[S(1) 0;0 S(2)]);    % stretch
+  rtellipse = fncmb(fncmb(ellipse, R), T );   % rotate
+  fnplt(rtellipse)
+  set(findobj(gca,'Color','blue'),'Color','b','LineWidth',4)
+
+  %%% rectangle
+  
+  hold on;
+  c=[0.0 0.6 0.4];
+  rectangle('Position',[2.5,0.5,2,3],'LineWidth',2,'facecolor',c,'edgecolor',c)
+
+  %%% rounded rectangle
+
+  hold on;
+  rectangle('Position',[0.5,-0.2,3.2,1.3],'Curvature',[0.8,0.4],'LineWidth',2,'facecolor','b')
+
+  %%% triangle
+
+  hold on;
+  h=patch([0 1 2], [3 4.5 3],'g');
+  set(h,'facecolor',[0.6 0.0 0.4],'facealpha',0.7)
+</pre></font></td></tr>
+
+
+<tr><td bgcolor="AAAAAA" colspan="2"><b>Voronoi plot</b></td></tr>
+<tr><td valign="top" bgcolor="DDDDDD"><img src="./MATLAB_files/voronoi.png" width="200"></td>
+    <td valign="top" bgcolor="DDDDDD"><font color="blue"><pre>  N=30;  % number of cells
+
+  x=rand(1,N);
+  y=rand(1,N);
+
+  D=[x;y]';
+
+  [v,c]=voronoin(D);  % get edges
+
+  for p=1:N
+
+  r=rand()/2+0.5;    % color: random light grey 
+  col=[r r r];
+
+  patch(v(c{p},1),v(c{p},2),col);  % color
+  hold on;
+  plot(x(p),y(p),'k.')        % dot at "center"
+
+  end
+
+  voronoi(x,y,'k')   % plot edges
+
+  axis equal
+  box on
+  xlim([0 1])
+  ylim([0 1])
+</pre></font></td></tr>
+
+
+
+<tr><td bgcolor="AAAAAA" colspan="2"><b>Sphere</b></td></tr>
+<tr><td valign="top" bgcolor="DDDDDD"><img src="./MATLAB_files/fig13.jpg" width="200"></td>
+    <td valign="top" bgcolor="DDDDDD"><font color="blue"><pre>  r=20;               % resolution
+  a=2;                % size of the sphere
+  xc=1;yc=2;zc=3;     % coordinates of the center
+  alpha=0.5;          % transparency 
+
+  [x,y,z]=sphere(r);
+
+  figure(1)
+  clf;
+
+  surf(xc+x*a,yc+y*a,zc+z*a,'facecolor','blue','edgecolor','k','facealpha',alpha)
+  %colormap('jet')   % colormap can be used if facecolor not used 
+
+  xlabel('x');
+  ylabel('y');
+  zlabel('z');
+</pre></font></td></tr>
+
+<tr><td bgcolor="AAAAAA" colspan="2"><b>Cube</b></td></tr>
+<tr><td valign="top" bgcolor="DDDDDD"><img src="./MATLAB_files/mycube.jpg" width="200"></td>
+    <td valign="top" bgcolor="DDDDDD"><font color="blue"><pre>xc=1; yc=1; zc=1;    % coordinated of the center
+L=1;                 % cube size (length of an edge)
+alpha=0.8;           % transparency (max=1=opaque)
+
+X = [0 0 0 0 0 1; 1 0 1 1 1 1; 1 0 1 1 1 1; 0 0 0 0 0 1];
+Y = [0 0 0 0 1 0; 0 1 0 0 1 1; 0 1 1 1 1 1; 0 0 1 1 1 0];
+Z = [0 0 1 0 0 0; 0 0 1 0 0 0; 1 1 1 0 1 1; 1 1 1 0 1 1];
+
+% C='blue';                                                   % unicolor
+C= [0.1 0.5 0.9 0.9 0.1 0.5];                                 % color/face
+% C = [0.1 0.8 1.1 1.1 0.1 0.8 ; 0.2 0.9 1.2 1.2 0.2 0.8 ;  
+%      0.3 0.9 1.3 1.3 0.3 0.9 ; 0.4 0.9 1.4 1.4 0.4 0.9 ];   % color scale/face
+
+X = L*(X-0.5) + xc;
+Y = L*(Y-0.5) + yc;
+Z = L*(Z-0.5) + zc; 
+
+fill3(X,Y,Z,C,'FaceAlpha',alpha);    % draw cube
+axis equal;
+
+AZ=-20;         % azimuth
+EL=25;          % elevation
+view(AZ,EL);    % orientation of the axes  
+</pre></font></td></tr>
+
+
+<tr><td bgcolor="AAAAAA" colspan="2"><b>Multi-plot</b></td></tr>
+<tr><td valign="top" bgcolor="DDDDDD"><img src="./MATLAB_files/fig5.jpg" width="200"></td>
+    <td valign="top" bgcolor="DDDDDD"><font color="blue"><pre>  figure(1)
+  clf;
+  
+  x=[0:10];
+
+  subplot(2,3,1)
+  plot(x,x)
+  
+  subplot(2,3,2)
+  plot(x,(x-5).^2)
+
+  subplot(2,3,3)
+  plot(x,1./(x+1))
+
+  subplot(2,3,4)
+  plot(x,exp(x))
+
+  subplot(2,3,5)
+  plot(x,sin(x))
+
+  subplot(2,3,6)
+  plot(x,factorial(x))
+  
+</pre></font></td></tr>
+
+<tr><td bgcolor="AAAAAA" colspan="2"><b>Multi-plot</b></td></tr>
+<tr><td valign="top" bgcolor="DDDDDD"><img src="./MATLAB_files/fig9.jpg" width="200"></td>
+    <td valign="top" bgcolor="DDDDDD"><font color="blue"><pre>  figure(1)
+  clf;
+  
+  x=[-1:0.02:1];
+
+  subplot(2,2,[1 3])
+  plot(x,x.^2,'b.')
+
+  subplot(2,2,2)
+  plot(x,1./x,'r.')
+
+  subplot(2,2,4)
+  plot(x,cos(10.*x),'g.')
+</pre></font></td></tr>
+
+<tr><td bgcolor="AAAAAA" colspan="2"><b>Multi-plot</b></td></tr>
+<tr><td valign="top" bgcolor="DDDDDD"><img src="./MATLAB_files/fig10.jpg" width="200"></td>
+    <td valign="top" bgcolor="DDDDDD"><font color="blue"><pre>  figure(1)
+  clf;
+
+  x=[0:0.01:20];
+
+  subplot('Position',[0.1 0.75 0.65 0.2])
+  plot(x,sin(x),'b')
+
+  subplot('Position',[0.2 0.45 0.65 0.2])
+  plot(x,cos(x),'b')
+
+  subplot('Position',[0.3 0.15 0.65 0.2])
+  plot(x,sin(x).*cos(x),'b')
+</pre></font></td></tr>
+
+<tr><td bgcolor="AAAAAA" colspan="2"><b>Inset</b></td></tr>
+<tr><td valign="top" bgcolor="DDDDDD"><img src="./MATLAB_files/fig20.jpg" width="200"></td>
+    <td valign="top" bgcolor="DDDDDD"><font color="blue"><pre>  figure(1)
+  clf;
+
+  x=[0:0.1:20]
+  y=sin(x)
+
+  subplot(1,1,1) ; % main plot
+
+  plot(x,y,'b')
+  xlabel('x','fontsize',18)
+  ylabel('sin(x)','fontsize',18)
+
+  axes('position',[0.5 0.6 0.3 0.2]) ; % inset
+
+  plot(x,abs(y),'r')
+  xlabel('x','fontsize',15)
+  ylabel('abs(sin(x))','fontsize',15)
+
+</pre></font></td></tr>
+
+
+<tr><td></td><td></td></tr>
+
+
+</tbody></table>
+
+
+<br>
+
+<hr noshade="noshade" size="1">
+
+<h2>Color code</h2>
+
+Colors can be defined by a vector of 3 elements (RGB code):
+<font color="blue"><pre>color=[r g b];  % r=red, g=green, b=blue
+</pre></font>
+Some colors can also be referred to by their "name". Examples:
+<font color="blue"><pre>color='b';   % blue
+color='k';   % black
+color='m';   % magenta
+</pre></font>
+Here is the code (r,g,b) and the name for different colors.
+<br><br>
+<b>Color scale</b>
+<br><br>
+<img src="./MATLAB_files/colorscale.png" width="800">
+<br><br>
+<b>Grey scale</b>
+<br><br>
+<img src="./MATLAB_files/greyscale.png" width="300">
+
+<br><br>
+
+<hr noshade="noshade" size="1">
+
+<h2>Here are some demo programs</h2>
+
+<table width="700">
+
+<tbody><tr><td bgcolor="AAAAAA" colspan="3"><b>Simulation</b></td></tr>
+
+<tr><td valign="top" bgcolor="DDDDDD">Simulating a discrete iterative system <br> (logistic equation)</td><td valign="top" bgcolor="DDDDDD">25/1/2008</td><td valign="top" bgcolor="DDDDDD"><a href="http://homepages.ulb.ac.be/~dgonze/INFO/matlab/logistic.m">logistic.m</a></td></tr>
+<tr><td valign="top" bgcolor="DDDDDD">Simulating a 2-ODE system <br> (Bruxellator)</td><td valign="top" bgcolor="DDDDDD">29/1/2008</td><td valign="top" bgcolor="DDDDDD"><a href="http://homepages.ulb.ac.be/~dgonze/INFO/matlab/brusselator.m">brusselator.m</a></td></tr>
+<tr><td valign="top" bgcolor="DDDDDD">Simulating a 2-ODE system + plot the direction field<br> (Toggle switch)</td><td valign="top" bgcolor="DDDDDD">31/1/2009</td><td valign="top" bgcolor="DDDDDD"><a href="http://homepages.ulb.ac.be/~dgonze/INFO/matlab/togglequiver.m">togglequiver.m</a></td></tr>
+<tr><td valign="top" bgcolor="DDDDDD">Simulating a 2-ODE phase oscillator <br> (limit-cycle phase oscillator)</td><td valign="top" bgcolor="DDDDDD">14/7/2008</td><td valign="top" bgcolor="DDDDDD"><a href="http://homepages.ulb.ac.be/~dgonze/INFO/matlab/phaseoscillator.m">phaseoscillator.m</a></td></tr>
+<tr><td valign="top" bgcolor="DDDDDD">Simulating a 3-ODE system <br> (FRQ model for circadian clock)</td><td valign="top" bgcolor="DDDDDD">25/1/2008</td><td valign="top" bgcolor="DDDDDD"><a href="http://homepages.ulb.ac.be/~dgonze/INFO/matlab/frq.m">frq.m</a></td></tr>
+<tr><td valign="top" bgcolor="DDDDDD">Simulating a forced 3-ODE system <br> (FRQ model for circadian clock entrained by a LD cycle)</td><td valign="top" bgcolor="DDDDDD">29/1/2008</td><td valign="top" bgcolor="DDDDDD"><a href="http://homepages.ulb.ac.be/~dgonze/INFO/matlab/frqforced.m">frqforced.m</a></td></tr>
+<tr><td valign="top" bgcolor="DDDDDD">Simulating a perturbed 3-ODE system + phase response curve <br> (FRQ model for circadian clock perturbed by a light pulse)</td><td valign="top" bgcolor="DDDDDD">22/7/2008</td><td valign="top" bgcolor="DDDDDD"><a href="http://homepages.ulb.ac.be/~dgonze/INFO/matlab/frqprc.m">frqprc.m</a></td></tr>
+<tr><td valign="top" bgcolor="DDDDDD">Simulating a 3-ODE system with a conditional resetting of a variable <br> (Ruoff model)</td><td valign="top" bgcolor="DDDDDD">13/8/2009</td><td valign="top" bgcolor="DDDDDD"><a href="http://homepages.ulb.ac.be/~dgonze/INFO/matlab/ruoff.m">ruoff.m</a></td></tr>
+<tr><td valign="top" bgcolor="DDDDDD">Simulating a chaotic 3-ODE system <br> (Rossler model)</td><td valign="top" bgcolor="DDDDDD">8/7/2008</td><td valign="top" bgcolor="DDDDDD"><a href="http://homepages.ulb.ac.be/~dgonze/INFO/matlab/rossler.m">rossler.m</a></td></tr>
+<tr><td valign="top" bgcolor="DDDDDD">Simulating a 2-variable DDE system <br> (Delay differential models for circadian clock:<br>Scheper model with 1 delay + Sriram model with 3 delays)</td><td valign="top" bgcolor="DDDDDD">16/7/2008</td><td valign="top" bgcolor="DDDDDD"><a href="http://homepages.ulb.ac.be/~dgonze/INFO/matlab/delaymodel1.m">delaymodel1.m</a><br><a href="http://homepages.ulb.ac.be/~dgonze/INFO/matlab/delaymodel2.m">delaymodel2.m</a></td></tr>
+<tr><td valign="top" bgcolor="DDDDDD">Simulating a system of coupled oscillators (N x 4-ODE system) <br> (Coupled Goodwin-like oscillators)</td><td valign="top" bgcolor="DDDDDD">29/5/2008</td><td valign="top" bgcolor="DDDDDD"><a href="http://homepages.ulb.ac.be/~dgonze/INFO/matlab/goodwinsynchro.m">goodwinsynchro.m</a></td></tr>
+<tr><td valign="top" bgcolor="DDDDDD">Simulating a system with diffusion <br> (1D and 2D simple Fick model)</td><td valign="top" bgcolor="DDDDDD">24/5/2008<br>29/5/2008</td><td valign="top" bgcolor="DDDDDD"><a href="http://homepages.ulb.ac.be/~dgonze/INFO/matlab/fick.m">fick.m</a><br><a href="http://homepages.ulb.ac.be/~dgonze/INFO/matlab/fick2D.m">fick2D.m</a></td></tr>
+<tr><td valign="top" bgcolor="DDDDDD">Simulating a reaction-diffusion system<br> (Reaction-diffusion Brusselator - 2D)</td><td valign="top" bgcolor="DDDDDD">29/5/2008</td><td valign="top" bgcolor="DDDDDD"><a href="http://homepages.ulb.ac.be/~dgonze/INFO/matlab/bruxRD2D.m">bruxRD2D.m</a></td></tr>
+<tr><td valign="top" bgcolor="DDDDDD">Simulating a stochastic system with the Gillespie algorithm <br> (Stochastic FRQ model)</td><td valign="top" bgcolor="DDDDDD">13/7/2007</td><td valign="top" bgcolor="DDDDDD"><a href="http://homepages.ulb.ac.be/~dgonze/INFO/matlab/frqstocha.m">frqstocha.m</a></td></tr>
+<tr><td valign="top" bgcolor="DDDDDD">Simulating a stochastic system with the Langevin algorithm <br> (Stochastic Brusselator model)</td><td valign="top" bgcolor="DDDDDD">26/1/2007</td><td valign="top" bgcolor="DDDDDD"><a href="http://homepages.ulb.ac.be/~dgonze/INFO/matlab/bruxLange.m">bruxLange.m</a></td></tr>
+
+<tr><td bgcolor="AAAAAA" colspan="3"><b>Time series analysis (deterministic time series)</b></td></tr>
+
+<tr><td valign="top" bgcolor="DDDDDD">Period (for deterministic oscillations)</td><td valign="top" bgcolor="DDDDDD">2/1/2011</td><td valign="top" bgcolor="DDDDDD"><a href="http://homepages.ulb.ac.be/~dgonze/INFO/matlab/period.m">period.m</a></td></tr>
+<tr><td valign="top" bgcolor="DDDDDD">Amplitude (for deterministic oscillations)</td><td valign="top" bgcolor="DDDDDD">2/1/2011</td><td valign="top" bgcolor="DDDDDD"><a href="http://homepages.ulb.ac.be/~dgonze/INFO/matlab/amplitude.m">amplitude.m</a></td></tr>
+<tr><td valign="top" bgcolor="DDDDDD">Phase (for deterministic oscillations)</td><td valign="top" bgcolor="DDDDDD">2/1/2011</td><td valign="top" bgcolor="DDDDDD"><a href="http://homepages.ulb.ac.be/~dgonze/INFO/matlab/phase.m">phase.m</a></td></tr>
+<tr><td valign="top" bgcolor="DDDDDD">Damping (for deterministic oscillations)</td><td valign="top" bgcolor="DDDDDD">2/1/2011</td><td valign="top" bgcolor="DDDDDD"><a href="http://homepages.ulb.ac.be/~dgonze/INFO/matlab/damping.m">damping.m</a></td></tr>
+<tr><td valign="top" bgcolor="DDDDDD">Poincare section</td><td valign="top" bgcolor="DDDDDD">8/3/2011</td><td valign="top" bgcolor="DDDDDD"><a href="http://homepages.ulb.ac.be/~dgonze/INFO/matlab/poincare.m">poincare.m</a></td></tr>
+<tr><td valign="top" bgcolor="DDDDDD">Order parameter (for synchronized oscillations)</td><td valign="top" bgcolor="DDDDDD">19/10/2010</td><td valign="top" bgcolor="DDDDDD"><a href="http://homepages.ulb.ac.be/~dgonze/INFO/matlab/orderparam.m">orderparam.m</a></td></tr>
+
+<tr><td bgcolor="AAAAAA" colspan="3"><b>Time series analysis (stochastic time series)</b></td></tr>
+
+<tr><td valign="top" bgcolor="DDDDDD">Auto-correlation function <br> (for stochastic oscillations)</td><td valign="top" bgcolor="DDDDDD">30/1/2008</td><td valign="top" bgcolor="DDDDDD"><a href="http://homepages.ulb.ac.be/~dgonze/INFO/matlab/autocorrelation.m">autocorrelation.m</a></td></tr>
+<tr><td valign="top" bgcolor="DDDDDD">Period distribution - naive approach<br> (for stochastic oscillations)</td><td valign="top" bgcolor="DDDDDD">30/1/2008</td><td valign="top" bgcolor="DDDDDD"><a href="http://homepages.ulb.ac.be/~dgonze/INFO/matlab/distriper.m">distriper.m</a></td></tr>
+<tr><td valign="top" bgcolor="DDDDDD">Period distribution using Hilbert transform <br> (for stochastic oscillations)</td><td valign="top" bgcolor="DDDDDD">12/12/2009</td><td valign="top" bgcolor="DDDDDD"><a href="http://homepages.ulb.ac.be/~dgonze/INFO/matlab/hilbertperiod.m">hilbertperiod.m</a></td></tr>
+<tr><td valign="top" bgcolor="DDDDDD">Fourier transform<br> (for stochastic oscillations)</td><td valign="top" bgcolor="DDDDDD">9/7/2008</td><td valign="top" bgcolor="DDDDDD"><a href="http://homepages.ulb.ac.be/~dgonze/INFO/matlab/myfft.m">myfft.m</a></td></tr>
+
+<tr><td bgcolor="AAAAAA" colspan="3"><b>Data visualisation</b></td></tr>
+
+<tr><td valign="top" bgcolor="DDDDDD">Actogram</td><td valign="top" bgcolor="DDDDDD">21/10/2010</td><td valign="top" bgcolor="DDDDDD"><a href="http://homepages.ulb.ac.be/~dgonze/INFO/matlab/actogram.m">actogram.m</a></td></tr>
+<tr><td valign="top" bgcolor="DDDDDD">Raster plot</td><td valign="top" bgcolor="DDDDDD">29/12/2010</td><td valign="top" bgcolor="DDDDDD"><a href="http://homepages.ulb.ac.be/~dgonze/INFO/matlab/raster.m">raster.m</a></td></tr>
+
+<tr><td bgcolor="AAAAAA" colspan="3"><b>Cellular automaton</b></td></tr>
+
+<tr><td valign="top" bgcolor="DDDDDD">Wolfram's automata (1D)<br>(see some results <a href="http://homepages.ulb.ac.be/~dgonze/INFO/matlab/wolfram.html">here</a>)</td><td valign="top" bgcolor="DDDDDD">27/7/2008</td><td valign="top" bgcolor="DDDDDD"><a href="http://homepages.ulb.ac.be/~dgonze/INFO/matlab/wolfram.m">wolfram.m</a></td></tr>
+<tr><td valign="top" bgcolor="DDDDDD">Game of Life (2D)<br>(see some results <a href="http://homepages.ulb.ac.be/~dgonze/INFO/matlab/gameoflife.html">here</a>)</td><td valign="top" bgcolor="DDDDDD">27/7/2008</td><td valign="top" bgcolor="DDDDDD"><a href="http://homepages.ulb.ac.be/~dgonze/INFO/matlab/gameoflife.m">gameoflife.m</a></td></tr>
+<tr><td valign="top" bgcolor="DDDDDD">Cell cycle automaton<br>(see scheme of the model <a href="http://homepages.ulb.ac.be/~dgonze/INFO/matlab/cdcautomaton.pdf">here</a> and results <a href="http://homepages.ulb.ac.be/~dgonze/INFO/matlab/cdcautomaton.html">here</a>)</td><td valign="top" bgcolor="DDDDDD">6/11/2008<br>16/11/2008</td><td valign="top" bgcolor="DDDDDD"><a href="http://homepages.ulb.ac.be/~dgonze/INFO/matlab/cdcautomaton.m">cdcautomaton.m</a><br><a href="http://homepages.ulb.ac.be/~dgonze/INFO/matlab/cdcautoanim.m">cdcautoanim.m</a></td></tr>
+<tr><td valign="top" bgcolor="DDDDDD">Hubbell model (population dynamics)<br>+spatial extension</td><td valign="top" bgcolor="DDDDDD">24/7/2012</td><td valign="top" bgcolor="DDDDDD"><a href="http://homepages.ulb.ac.be/~dgonze/INFO/matlab/hubbell.m">hubbell.m</a><br><a href="http://homepages.ulb.ac.be/~dgonze/INFO/matlab/hubbell_spatial.m">hubbell_spatial.m</a></td></tr>
+<tr><td valign="top" bgcolor="DDDDDD">Other automata<br>(Langton'ant, Diffusion, Aggregation, Sand pile, etc)</td><td valign="top" bgcolor="DDDDDD">28/12/2010</td><td valign="top" bgcolor="DDDDDD">See <a href="http://homepages.ulb.ac.be/~dgonze/INFO/matlab/automata.html">here</a></td></tr>
+
+<tr><td bgcolor="AAAAAA" colspan="3"><b>Random walks</b></td></tr>
+
+<tr><td valign="top" bgcolor="DDDDDD">Random walk<br></td><td valign="top" bgcolor="DDDDDD">30/12/2008</td><td valign="top" bgcolor="DDDDDD"><a href="http://homepages.ulb.ac.be/~dgonze/INFO/matlab/randomwalk.m">randomwalk.m</a></td></tr>
+<tr><td valign="top" bgcolor="DDDDDD">Brownian movement<br></td><td valign="top" bgcolor="DDDDDD">30/12/2008</td><td valign="top" bgcolor="DDDDDD"><a href="http://homepages.ulb.ac.be/~dgonze/INFO/matlab/brownian.m">brownian.m</a></td></tr>
+
+<tr><td bgcolor="AAAAAA" colspan="3"><b>Fibonacci and Golden ratio</b></td></tr>
+
+<tr><td valign="top" bgcolor="DDDDDD">Fibonacci numbers<br></td><td valign="top" bgcolor="DDDDDD">31/12/2008</td><td valign="top" bgcolor="DDDDDD"><a href="http://homepages.ulb.ac.be/~dgonze/INFO/matlab/fibonacci.m">fibonacci.m</a></td></tr>
+<tr><td valign="top" bgcolor="DDDDDD">Golden spiral<br></td><td valign="top" bgcolor="DDDDDD">31/12/2008</td><td valign="top" bgcolor="DDDDDD"><a href="http://homepages.ulb.ac.be/~dgonze/INFO/matlab/goldspiral.m">goldspiral.m</a></td></tr>
+<tr><td valign="top" bgcolor="DDDDDD">Golden plant<br></td><td valign="top" bgcolor="DDDDDD">31/12/2008</td><td valign="top" bgcolor="DDDDDD"><a href="http://homepages.ulb.ac.be/~dgonze/INFO/matlab/goldplant.m">goldplant.m</a></td></tr>
+<tr><td valign="top" bgcolor="DDDDDD">Golden tree<br></td><td valign="top" bgcolor="DDDDDD">31/12/2008</td><td valign="top" bgcolor="DDDDDD"><a href="http://homepages.ulb.ac.be/~dgonze/INFO/matlab/goldtree.m">goldtree.m</a></td></tr>
+<tr><td valign="top" bgcolor="DDDDDD">Tournesol<br></td><td valign="top" bgcolor="DDDDDD">31/12/2008</td><td valign="top" bgcolor="DDDDDD"><a href="http://homepages.ulb.ac.be/~dgonze/INFO/matlab/tournesol.m">tournesol.m</a></td></tr>
+
+<tr><td bgcolor="AAAAAA" colspan="3"><b>Fractals</b></td></tr>
+
+<tr><td valign="top" bgcolor="DDDDDD">Cantor, Koch, Sierpinsky, Menger (2D or 3D),<br>Julia, Mandelbrot,...</td><td valign="top" bgcolor="DDDDDD">25/1/2008</td><td valign="top" bgcolor="DDDDDD">See <a href="http://homepages.ulb.ac.be/~dgonze/FRACTALS/fractals.html">here</a><a></a></td></tr>
+
+<tr><td bgcolor="AAAAAA" colspan="3"><b>Image manipulation</b></td></tr>
+
+<tr><td valign="top" bgcolor="DDDDDD">Image deformations<br>(applied here to <a href="http://homepages.ulb.ac.be/~dgonze/INFO/matlab/clownfish1.jpg">clownfish1.jpg</a>)</td><td valign="top" bgcolor="DDDDDD">21/7/2008</td><td valign="top" bgcolor="DDDDDD"><a href="http://homepages.ulb.ac.be/~dgonze/INFO/matlab/imtransfo.m">imtransfo.m</a></td></tr>
+<tr><td valign="top" bgcolor="DDDDDD">Image colors changes<br>(applied here to <a href="http://homepages.ulb.ac.be/~dgonze/INFO/matlab/clownfish1.jpg">clownfish1.jpg</a>)</td><td valign="top" bgcolor="DDDDDD">21/7/2008</td><td valign="top" bgcolor="DDDDDD"><a href="http://homepages.ulb.ac.be/~dgonze/INFO/matlab/imcolor.m">imcolor.m</a></td></tr>
+<tr><td valign="top" bgcolor="DDDDDD">Image superposition<br>(applied here to <a href="http://homepages.ulb.ac.be/~dgonze/INFO/matlab/clownfish1.jpg">clownfish1.jpg</a> and <a href="http://homepages.ulb.ac.be/~dgonze/INFO/matlab/clownfish2.jpg">clownfish2.jpg</a>)</td><td valign="top" bgcolor="DDDDDD">21/7/2008</td><td valign="top" bgcolor="DDDDDD"><a href="http://homepages.ulb.ac.be/~dgonze/INFO/matlab/imsuper.m">imsuper.m</a></td></tr>
+<tr><td valign="top" bgcolor="DDDDDD">Photomaton<br>(applied here to <a href="http://homepages.ulb.ac.be/~dgonze/INFO/matlab/monalisa_256.jpg">monalisa_256.jpg</a> =&gt; <a href="http://homepages.ulb.ac.be/~dgonze/INFO/matlab/monalisa_out.png">monalisa_out.jpg</a>)</td><td valign="top" bgcolor="DDDDDD">24/7/2010</td><td valign="top" bgcolor="DDDDDD"><a href="http://homepages.ulb.ac.be/~dgonze/INFO/matlab/photomaton.m">photomaton.m</a></td></tr>
+<tr><td valign="top" bgcolor="DDDDDD">Transformation du Boulanger<br>(applied here to <a href="http://homepages.ulb.ac.be/~dgonze/INFO/matlab/monalisa_256.jpg">monalisa_256.jpg</a> =&gt; <a href="http://homepages.ulb.ac.be/~dgonze/INFO/matlab/monalisaboul.png">monalisaboul.png</a>)</td><td valign="top" bgcolor="DDDDDD">9/10/2011</td><td valign="top" bgcolor="DDDDDD"><a href="http://homepages.ulb.ac.be/~dgonze/INFO/matlab/boulanger.m">boulanger.m</a></td></tr>
+<tr><td valign="top" bgcolor="DDDDDD">Photocube<br>(applied here to <a href="http://homepages.ulb.ac.be/~dgonze/INFO/matlab/photo1.jpg">photo1.jpg</a>+<a href="http://homepages.ulb.ac.be/~dgonze/INFO/matlab/photo2.jpg">photo2.jpg</a>+<a href="http://homepages.ulb.ac.be/~dgonze/INFO/matlab/photo3.jpg">photo3.jpg</a> =&gt; <a href="http://homepages.ulb.ac.be/~dgonze/INFO/matlab/photocube.jpg">photocube.jpg</a>)</td><td valign="top" bgcolor="DDDDDD">17/8/2012</td><td valign="top" bgcolor="DDDDDD"><a href="http://homepages.ulb.ac.be/~dgonze/INFO/matlab/photocube.m">photocube.m</a></td></tr>
+
+<tr><td bgcolor="AAAAAA" colspan="3"><b>Animation</b></td></tr>
+
+<tr><td valign="top" bgcolor="DDDDDD">Rotating cube<br>(see animation <a href="http://homepages.ulb.ac.be/~dgonze/INFO/matlab/animacube.html">here</a>)</td><td valign="top" bgcolor="DDDDDD">3/1/2009</td><td valign="top" bgcolor="DDDDDD"><a href="http://homepages.ulb.ac.be/~dgonze/INFO/matlab/rotatingcube.m">rotatingcube.m</a></td></tr>
+<tr><td valign="top" bgcolor="DDDDDD">Lighted sphere<br>(see animation <a href="http://homepages.ulb.ac.be/~dgonze/INFO/matlab/lightsphere.html">here</a>)</td><td valign="top" bgcolor="DDDDDD">15/2/2009</td><td valign="top" bgcolor="DDDDDD"><a href="http://homepages.ulb.ac.be/~dgonze/INFO/matlab/lightsphere.m">lightsphere.m</a></td></tr>
+<tr><td valign="top" bgcolor="DDDDDD">Transparent icosahedron<br>(see animation <a href="http://homepages.ulb.ac.be/~dgonze/INFO/matlab/icosahedron.html">here</a>)</td><td valign="top" bgcolor="DDDDDD">15/2/2009</td><td valign="top" bgcolor="DDDDDD"><a href="http://homepages.ulb.ac.be/~dgonze/INFO/matlab/icosahedron.m">icosahedron.m</a></td></tr>
+
+</tbody></table>
+
+<br>
+<br>
+
+<hr noshade="noshade" size="1">
+
+<font size="-1">Didier Gonze - <i>Created</i>: 25/1/2008  - <i>Updated</i>: 21/8/2012 - [<a href="http://homepages.ulb.ac.be/~dgonze/links.html">back</a>] - [<a href="http://homepages.ulb.ac.be/~dgonze/welcome.html">home</a>]
+</font>
+</body></html>

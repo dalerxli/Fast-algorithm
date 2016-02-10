@@ -1,0 +1,108 @@
+[gcn-15-35.sdsc.edu:mpispawn_8][read_size] Unexpected End-Of-File on file descriptor 13. MPI process died?
+[gcn-15-35.sdsc.edu:mpispawn_8][read_size] Unexpected End-Of-File on file descriptor 13. MPI process died?
+[gcn-15-35.sdsc.edu:mpispawn_8][handle_mt_peer] Error while reading PMI socket. MPI process died?
+[gcn-14-74.sdsc.edu:mpispawn_6][read_size] Unexpected End-Of-File on file descriptor 13. MPI process died?
+[gcn-14-74.sdsc.edu:mpispawn_6][read_size] Unexpected End-Of-File on file descriptor 13. MPI proce[gcn-13-54.sdsc.edu:mpispawn_1][child_handler] MPI process (rank: 10, pid: 124004) terminated with signal 9 -> abort job
+[gcn-15-33.sdsc.edu:mpispawn_7][read_size] Unexpected End-Of-File on file descriptor 13. MPI process died?
+[gcn-15-33.sdsc.edu:mpispawn_7][read_size] Unexpected End-Of-File on file descriptor 13. MPI process died?
+[gcn-15-33.sdsc.edu:mpispawn_7][handle_mt_peer] Error while reading PMI socket. MPI process died?
+[gcn-14-51.sdsc.edu:mpispawn_5][read_size] Unexpected End-Of-File on file descriptor 13. MPI process died?
+[gcn-14-51.sdsc.edu:mpispawn_5][read_size] Unexpected End-Of-File on file descriptor 13. MPI process died?
+[gcn-14-51.sdsc.edu:mpispawn_5][handle_mt_peer] Error while reading PMI socket. MPI process died?
+[gcn-13-51.sdsc.edu:mpirun_rsh][process_mpispawn_connection] mpispawn_1 from node gcn-13-54 aborted: MPI process error (1)
+[gcn-13-51.sdsc.edu:mpispawn_0][read_size] Unexpected End-Of-File on file descriptor 14. MPI process died?
+[gcn-13-51.sdsc.edu:mpispawn_0][read_size] Unexpected End-Of-File on file descriptor 14. MPI process died?
+[gcn-13-51.sdsc.edu:mpispawn_0][handle_mt_peer] Error while reading PMI socket. MPI process died?
+[gcn-7-67.sdsc.edu:mpispawn_34][read_size] Unexpected End-Of-File on file descriptor 13. MPI process died?
+[gcn-7-67.sdsc.edu:mpispawn_34][read_size] Unexpected End-Of-File on file descriptor 13. MPI process died?
+[gcn-7-67.sdsc.edu:mpispawn_34][handle_mt_peer] Error while reading PMI socket. MPI process died?
+[gcn-4-27.sdsc.edu:mpispawn_22][read_size] Unexpected End-Of-File on file descriptor 13. MPI process died?
+[gcn-4-27.sdsc.edu:mpispawn_22][read_size] Unexpected End-Of-File on file descriptor 13. MPI process died?
+[gcn-4-27.sdsc.edu:mpispawn_22][handle_mt_peer] Error while reading PMI socket. MPI process died?
+[gcn-5-24.sdsc.edu:mpispawn_28][read_size] Unexpected End-Of-File on file descriptor 13. MPI process died?
+[gcn-5-24.sdsc.edu:mpispawn_28][read_size] Unexpected End-Of-File on file descriptor 13. MPI process died?
+[gcn-5-24.sdsc.edu:mpispawn_28][handle_mt_peer] Error while reading PMI socket. MPI process died?
+[gcn-7-35.sdsc.edu:mpispawn_32][read_size] Unexpected End-Of-File on file descriptor 13. MPI process died?
+[gcn-7-35.sdsc.edu:mpispawn_32][read_size] Unexpected End-Of-File on file descriptor 13. MPI process died?
+[gcn-7-35.sdsc.edu:mpispawn_32][handle_mt_peer] Error while reading PMI socket. MPI process died?
+[gcn-4-51.sdsc.edu:mpispawn_24][read_size] Unexpected End-Of-File on file descriptor 13. MPI process died?
+[gcn-4-51.sdsc.edu:mpispawn_24][read_size] Unexpected End-Of-File on file descriptor 13. MPI process died?
+[gcn-4-51.sdsc.edu:mpispawn_24][handle_mt_peer] Error while reading PMI socket. MPI process died?
+[gcn-5-68.sdsc.edu:mpispawn_29][read_size] Unexpected End-Of-File on file descriptor 13. MPI process died?
+[gcn-5-68.sdsc.edu:mpispawn_29][read_size] Unexpected End-Of-File on file descriptor 13. MPI process died?
+[gcn-5-68.sdsc.edu:mpispawn_29][handle_mt_peer] Error while reading PMI socket. MPI process died?
+[gcn-5-22.sdsc.edu:mpispawn_26][read_size] Unexpected End-Of-File on file descriptor 13. MPI process died?
+[gcn-5-22.sdsc.edu:mpispawn_26][read_size] Unexpected End-Of-File on file descriptor 13. MPI process died?
+[gcn-5-22.sdsc.edu:mpispawn_26][handle_mt_peer] Error while reading PMI socket. MPI process died?
+[gcn-4-43.sdsc.edu:mpispawn_23][read_size] Unexpected End-Of-File on file descriptor 13. MPI process died?
+[gcn-4-43.sdsc.edu:mpispawn_23][read_size] Unexpected End-Of-File on file descriptor 13. MPI process died?
+[gcn-4-43.sdsc.edu:mpispawn_23][handle_mt_peer] Error while reading PMI socket. MPI process died?
+[gcn-5-23.sdsc.edu:mpispawn_27][read_size] Unexpected End-Of-File on file descriptor 13. MPI process died?
+[gcn-5-23.sdsc.edu:mpispawn_27][read_size] Unexpected End-Of-File on file descriptor 13. MPI process died?
+[gcn-5-23.sdsc.edu:mpispawn_27][handle_mt_peer] Error while reading PMI socket. MPI process died?
+[gcn-4-63.sdsc.edu:mpispawn_25][read_size] Unexpected End-Of-File on file descriptor 13. MPI process died?
+[gcn-4-63.sdsc.edu:mpispawn_25][read_size] Unexpected End-Of-File on file descriptor 13. MPI process died?
+[gcn-4-63.sdsc.edu:mpispawn_25][handle_mt_peer] Error while reading PMI socket. MPI process died?
+[gcn-6-37.sdsc.edu:mpispawn_31][read_size] Unexpected End-Of-File on file descriptor 13. MPI process died?
+[gcn-6-37.sdsc.edu:mpispawn_31][read_size] Unexpected End-Of-File on file descriptor 13. MPI process died?
+[gcn-6-37.sdsc.edu:mpispawn_31][handle_mt_peer] Error while reading PMI socket. MPI process died?
+[gcn-7-36.sdsc.edu:mpispawn_33][read_size] Unexpected End-Of-File on file descriptor 13. MPI process died?
+[gcn-7-36.sdsc.edu:mpispawn_33][read_size] Unexpected End-Of-File on file descriptor 13. MPI process died?
+[gcn-7-36.sdsc.edu:mpispawn_33][handle_mt_peer] Error while reading PMI socket. MPI process died?
+[gcn-8-35.sdsc.edu:mpispawn_36][read_size] Unexpected End-Of-File on file descriptor 13. MPI process died?
+[gcn-8-35.sdsc.edu:mpispawn_36][read_size] Unexpected End-Of-File on file descriptor 13. MPI process died?
+[gcn-8-35.sdsc.edu:mpispawn_36][handle_mt_peer] Error while reading PMI socket. MPI process died?
+[gcn-13-61.sdsc.edu:mpispawn_2][read_size] Unexpected End-Of-File on file descriptor 13. MPI process died?
+[gcn-13-61.sdsc.edu:mpispawn_2][read_size] Unexpected End-Of-File on file descriptor 13. MPI process died?
+[gcn-13-61.sdsc.edu:mpispawn_2][handle_mt_peer] Error while reading PMI socket. MPI process died?
+[gcn-14-12.sdsc.edu:mpispawn_4][read_size] Unexpected End-Of-File on file descriptor 13. MPI process died?
+[gcn-14-12.sdsc.edu:mpispawn_4][read_size] Unexpected End-Of-File on file descriptor 13. MPI process died?
+[gcn-14-12.sdsc.edu:mpispawn_4][handle_mt_peer] Error while reading PMI socket. MPI process died?
+[gcn-13-83.sdsc.edu:mpispawn_3][read_size] Unexpected End-Of-File on file descriptor 13. MPI process died?
+[gcn-13-83.sdsc.edu:mpispawn_3][read_size] Unexpected End-Of-File on file descriptor 13. MPI process died?
+[gcn-13-83.sdsc.edu:mpispawn_3][handle_mt_peer] Error while reading PMI socket. MPI process died?
+[gcn-2-61.sdsc.edu:mpispawn_17][read_size] Unexpected End-Of-File on file descriptor 13. MPI process died?
+[gcn-2-61.sdsc.edu:mpispawn_17][read_size] Unexpected End-Of-File on file descriptor 13. MPI process died?
+[gcn-2-61.sdsc.edu:mpispawn_17][handle_mt_peer] Error while reading PMI socket. MPI process died?
+[gcn-3-15.sdsc.edu:mpispawn_20][read_size] Unexpected End-Of-File on file descriptor 13. MPI process died?
+[gcn-3-15.sdsc.edu:mpispawn_20][read_size] Unexpected End-Of-File on file descriptor 13. MPI process died?
+[gcn-3-15.sdsc.edu:mpispawn_20][handle_mt_peer] Error while reading PMI socket. MPI process died?
+[gcn-2-87.sdsc.edu:mpispawn_19][read_size] Unexpected End-Of-File on file descriptor 13. MPI process died?
+[gcn-2-87.sdsc.edu:mpispawn_19][read_size] Unexpected End-Of-File on file descriptor 13. MPI process died?
+[gcn-2-87.sdsc.edu:mpispawn_19][handle_mt_peer] Error while reading PMI socket. MPI process died?
+[gcn-2-86.sdsc.edu:mpispawn_18][read_size] Unexpected End-Of-File on file descriptor 13. MPI process died?
+[gcn-2-86.sdsc.edu:mpispawn_18][read_size] Unexpected End-Of-File on file descriptor 13. MPI process died?
+[gcn-2-86.sdsc.edu:mpispawn_18][handle_mt_peer] Error while reading PMI socket. MPI process died?
+[gcn-15-37.sdsc.edu:mpispawn_10][read_size] Unexpected End-Of-File on file descriptor 13. MPI process died?
+[gcn-15-37.sdsc.edu:mpispawn_10][read_size] Unexpected End-Of-File on file descriptor 13. MPI process died?
+[gcn-15-37.sdsc.edu:mpispawn_10][handle_mt_peer] Error while reading PMI socket. MPI process died?
+[gcn-16-25.sdsc.edu:mpispawn_12][read_size] Unexpected End-Of-File on file descriptor 13. MPI process died?
+[gcn-16-25.sdsc.edu:mpispawn_12][read_size] Unexpected End-Of-File on file descriptor 13. MPI process died?
+[gcn-16-25.sdsc.edu:mpispawn_12][handle_mt_peer] Error while reading PMI socket. MPI process died?
+[gcn-16-24.sdsc.edu:mpispawn_11][read_size] Unexpected End-Of-File on file descriptor 13. MPI process died?
+[gcn-16-24.sdsc.edu:mpispawn_11][read_size] Unexpected End-Of-File on file descriptor 13. MPI process died?
+[gcn-16-24.sdsc.edu:mpispawn_11][handle_mt_peer] Error while reading PMI socket. MPI process died?
+[gcn-15-36.sdsc.edu:mpispawn_9][read_size] Unexpected End-Of-File on file descriptor 13. MPI process died?
+[gcn-15-36.sdsc.edu:mpispawn_9][read_size] Unexpected End-Of-File on file descriptor 13. MPI process died?
+[gcn-15-36.sdsc.edu:mpispawn_9][handle_mt_peer] Error while reading PMI socket. MPI process died?
+[gcn-8-64.sdsc.edu:mpispawn_37][read_size] Unexpected End-Of-File on file descriptor 13. MPI process died?
+[gcn-8-64.sdsc.edu:mpispawn_37][read_size] Unexpected End-Of-File on file descriptor 13. MPI process died?
+[gcn-8-64.sdsc.edu:mpispawn_37][handle_mt_peer] Error while reading PMI socket. MPI process died?
+[gcn-9-28.sdsc.edu:mpispawn_39][read_size] Unexpected End-Of-File on file descriptor 13. MPI process died?
+[gcn-9-28.sdsc.edu:mpispawn_39][read_size] Unexpected End-Of-File on file descriptor 13. MPI process died?
+[gcn-9-28.sdsc.edu:mpispawn_39][handle_mt_peer] Error while reading PMI socket. MPI process died?
+[gcn-9-15.sdsc.edu:mpispawn_38][read_size] Unexpected End-Of-File on file descriptor 13. MPI process died?
+[gcn-9-15.sdsc.edu:mpispawn_38][read_size] Unexpected End-Of-File on file descriptor 13. MPI process died?
+[gcn-9-15.sdsc.edu:mpispawn_38][handle_mt_peer] Error while reading PMI socket. MPI process died?
+[gcn-16-83.sdsc.edu:mpispawn_14][read_size] Unexpected End-Of-File on file descriptor 13. MPI process died?
+[gcn-16-83.sdsc.edu:mpispawn_14][read_size] Unexpected End-Of-File on file descriptor 13. MPI process died?
+[gcn-16-83.sdsc.edu:mpispawn_14][handle_mt_peer] Error while reading PMI socket. MPI process died?
+[gcn-2-57.sdsc.edu:mpispawn_16][read_size] Unexpected End-Of-File on file descriptor 13. MPI process died?
+[gcn-2-57.sdsc.edu:mpispawn_16][read_size] Unexpected End-Of-File on file descriptor 13. MPI process died?
+[gcn-2-57.sdsc.edu:mpispawn_16][handle_mt_peer] Error while reading PMI socket. MPI process died?
+[gcn-2-28.sdsc.edu:mpispawn_15][read_size] Unexpected End-Of-File on file descriptor 13. MPI process died?
+[gcn-2-28.sdsc.edu:mpispawn_15][read_size] Unexpected End-Of-File on file descriptor 13. MPI process died?
+[gcn-2-28.sdsc.edu:mpispawn_15][handle_mt_peer] Error while reading PMI socket. MPI process died?
+[gcn-16-53.sdsc.edu:mpispawn_13][read_size] Unexpected End-Of-File on file descriptor 13. MPI process died?
+[gcn-16-53.sdsc.edu:mpispawn_13][read_size] Unexpected End-Of-File on file descriptor 13. MPI process died?
+[gcn-16-53.sdsc.edu:mpispawn_13][handle_mt_peer] Error while reading PMI socket. MPI process died?

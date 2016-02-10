@@ -1,0 +1,508 @@
+[117]PETSC ERROR: [127]PETSC ERROR: [115]PETSC ERROR: [121]PETSC ERROR: [123]PETSC ERROR: [125]PETSC ERROR: ------------------------------------------------------------------------
+------------------------------------------------------------------------
+[115]PETSC ERROR: [117]PETSC ERROR: -------------------------------------------------------[389]PETSC ERROR: ------------------------------------------------------------------------
+[127]PETSC ERROR: Caught signal number 11 SEGV: Segmentation Violation, probably memory access out of range
+Caught signal number 11 SEGV: Segmentation Violation, probably memory access out of range
+[125]PETSC ERROR: [115]PETSC ERROR: [1[203]PETSC ERROR: ------------------------------------------------------------------------
+------------------------------------------------------------------------
+[197]PETSC ERROR: Caught signal number 11 SEGV: Segmentation Violation, probably memory access out of range
+[201]PETSC ERROR: [205]PETSC ERROR: [193]PETSC ERROR: Caught signal number 11 SEGV: Segmentation Violation, probably memory access out of range
+Caught signal number 11 SEGV: Segmentation Violation, probably memory access out of range
+[203]PETSC ERROR: Caught signal number 11 SEGV: Segmentation Violation, probably memory access out of range
+Caught signal number 11 SEGV: Segmentation Violation, probably memory access out of range
+Try option -start_in_debugger or -on_error_attach_debugger
+[205]PETSC ERROR: Try option -start_in_debugger or -on_error_attach_debugger
+[203]PETSC ERROR: [201]PETSC ERROR: Try option -start_in_debugger or -on_error_attach_debugger
+[193]PETSC ERROR: or see http://www.mcs.anl.gov/petsc/documentation/faq.html#valgrindTry option -start_in_debugger or -on_error_attach_debugger
+[205]PETSC ERROR: or see http://www.mcs.anl.gov/petsc/documentation/faq.html#valgrind[203]PETSC ERROR: [201]PETSC ERROR: or see http://www.mcs.anl.gov/petsc/documentation/faq.html#valgrind[193]PETSC ERROR: or try http://valgrind.org on GNU/linux and Apple Mac OS X to find memory corruption errors
+or see http://www.mcs.anl.gov/petsc/documentation/faq.html#valgrind[205]PETSC ERROR: or try http://valgrind.org on GNU/linux and Apple Mac OS X to find memory corruption errors
+[201]PETSC ERROR: [203]PETSC ERROR: or try http://valgrind.org on GNU/linux and Apple Mac OS X to find memory corruption errors
+[193]PETSC ERROR: or try http://valgrind.org on GNU/linux and Apple Mac OS X to find memory corruption errors
+configure using --with-debugging=yes, recompile, liconfigure using --with-debugging=yes, recompile, link, and run 
+[131]PETSC ERROR: configure using --with-debugging=yes, recompile, link, and run 
+to get more information on the crash.
+or see http://www.mcs.anl.gov/petsc/dSee docs/changes/index.html for recent updates.
+See docs/changes/index.html for recent updates.
+[483]PETSC ERROR: [481]PETSC ERROR: See docs/changes/index.html for recent updates.
+See docs/faq.html for hints about trouble shooting.
+See docs/faq.html for hints about trouble shooting.
+[485]PETSC ERROR: [483]PETSC ERROR: [481]PETSC ERROR: See docs/faq.html for hints about trouble shooting.
+See docs/index.html for manual pages.
+See docs/index.html for manual pages.
+[485]PETSC ERROR: [481]PETSC ERROR: [483]PETSC ERROR: See docs/index.html for manual pages.
+------------------------------------------------------------------------
+------------------------------------------------------------------------
+[485]PETSC ERROR: [481]PETSC ERROR: [483]PETSC ERROR: ------------------------------------------------------------------------
+[485]PETSC ERROR: ./scat on a arch-linux2-fftw named gcn-9-13.sdsc.edu by nhantran Tue Apr  8 20:47:15 2014
+./scat on a arch-linux2-fftw named gcn-9-13.sdsc.edu by nhantran Tue Apr  8 20:47:15 2014
+[481]PETSC ERROR: [483]PETSC ERROR: ./scat on a arch-linux2-fftw named gcn-9-13.sdsc.edu by nhantran Tue Apr  8 20:47:Petsc Release Version 3.4.3, Oct, 15, 2013 
+Signal received!
+[185]PETSC ERROR: [191]PETSC ERROR: or see http://www.mcs.anl.gov/petsc/documentation/faq.html#valgrindPetsc Release Version 3.4.3, Oct, 15, 2013 
+[18Petsc Release Version 3.4.3, Oct, 15,[411]PETSC ERROR: or try http://valgrind.org on GNU/linux and Apple Mac OS X to find memory corruption errors
+[415]PETSC ERROR: ------------------------------------------------------------------------
+[407]PETSC ERROR: --------------------- Error Message ------------------------------------
+[405]PETSC ERROR: --------------------- Error Message ------------------------------------
+[409]PETSC ERROR: --------------------- Error Message ------------------------------------
+Petsc Release Version 3.4.3, Oct, 15, 2013 
+configure using --with-debugging=yes, recompile, link, and run 
+[411]PETSC ERROR: [407]PETSC ERROR: [415]PETSC ERROR: [409]PETSC ERROR: to get more information on the crash.
+[405]PETSC ERROR: Signal received!
+[402]PETSC ERROR: [414]PETSC ERROR: [410]PETSC ERROR: [412]PETSC ERROR: ------------------------------------------------------------------------
+------------------------------------------------------------------------
+[409]PETSC ERROR: ------------------------------------------------------------------------
+Caught signal number 11 SEGV: Segmentation Violation, probably memory access out of range
+[402]PETSC ERROR: [410]PETSC ERROR: [414]PETSC ERROR: --------------------- Error Message ------------------------------------
+[413]PETSC ERROR: Caught signal number 11 SEGV: Segmentation Violation, probably memory access out of range
+Caught signal number 11 SEGV: Segmentation Violation, probably memory access out of range
+[401]PETSC ERROR: Caught signal number 11 SEGV: Segmentation Violation, probably memory access out of range
+------------------------------------------------------------------------
+Try option -start_in_debugger or -on_error_attach_debugger
+Signal received!
+[403]PETSC ERROR: [413]PETSC ERROR: [401]PETSC ERROR: [414]PETSC ERROR: ------------------------------------------------------------------------
+or see http://www.mcs.anl.gov/petsc/documentation/faq.html#valgrindCaught signal number 11 SEGV: Segmentation Violation, probably memory access out of range
+[401]PETSC ERROR: Try option -start_in_debugger or -on_error_attach_debugger
+[413]PETSC ERROR: Petsc Release Version 3.4.3, Oct, 15, 2013 
+[403]PETSC ERROR: [401]PETSC ERROR: Try option -start_in_debugger or -on_error_attach_debugger
+[414]PETSC ERROR: [406]PETSC ERROR: See docs/changes/index.html for recent updates.
+[403]PETSC ERROR: or try http://valgrind.org on GNU/linux and Apple Mac OS X to find memory corruption errors
+or see http://www.mcs.anl.gov/petsc/documentation/faq.html#valgrind[401]PETSC ERROR: [403]PETSC ERROR: or see http://www.mcs.anl.gov/petsc/documentation/faq.html#valgrind------------------------------------------------------------------------
+See docs/faq.html for hints about trouble shooting.
+or try http://valgrind.org on GNU/linux and Apple Mac OS X to find memory corruption errors
+[406]PETSC ERROR: [414]PETSC ERROR: [401]PETSC ERROR: [403]PETSC ERROR: Caught signal number 11 SEGV: Segmentation Violation, probably memory access out of range
+See docs/index.html for manual pages.
+configure using --with-debugging=yes, recompile, link, and run 
+or try http://valgrind.org on GNU/linux and Apple Mac OS X to find memory corruption errors
+[403]PETSC ERROR: [401]PETSC ERROR: [406]PETSC ERROR: to get more information on the crash.
+------------------------------------------------------------------------
+Try option -start_in_debugger or -on_error_attach_debugger
+[400]PETSC ERROR: [401]PETSC ERROR: [406]PETSC ERROR: [414]PETSC ERROR: ./scat on a arch-linux2-fftw named gcn-20-65.sdsc.edu by nhantran Tue Apr  8 20:47:15 2014
+or see http://www.mcs.anl.gov/petsc/documentation/faq.html#valgrindSignal received!
+configure using --with-debugging=yes, recompile, link, and run 
+[403]PETSC ERROR: [270]PETSC ERROR: ------------------------------------------------------------------------
+------------------------------------------------------------------------
+[260]PETSC ERROR: [270]PETSC ERROR: Petsc Release Version 3.4.3, Oct, 15, 2013 
+Petsc Release Version 3.4.3, Oct, 15, 2013 
+[260]PETSC ERROR: [270]PETSC ERROR: See docs/changes/index.html for recent updates.
+See docs/changes/index.html for recent updates.
+[260]PETSC ERROR: [270]PETSC ERR[196]PETSC ERROR: ------------------------------------------------------------------------
+Caught signal number 11 SEGV: Segmentation Violation, probably memory access out of range
+[202]PETSC ERROR: Caught signal number 11 SEGV: Segmentation Violation, probably memory access out of range
+[206]PETSC ERROR: [194]PETSC ERROR: aborting job:
+application called MPI_Abort(MPI_COMM_WORLD, 59) - process 203
+[196]PETSC ERROR: Try option -start_in_debugger or -on_error_attach_debugger[54]PETSC ERROR: See docs/index.html for manual pages.
+See docs/faq.html for hints about trouble shooting.
+[62]PETSC ERROR: [48]PETSC ERROR: [63]PETSC ERROR: See docs/changes/index.html for recent updates.
+configure using --with-debugging=yes, recompile, link, and run 
+See docs/index.html for manual pages.
+------------------------------------------------------------------------
+[62]PETSC ERROR: [48]PETSC ERROR: See docs/faq.html for hints about trouble shooting.
+[54]PETSC ERROR: ------------------------------------------------------------------------
+[63]PETSC ERROR: [62]PETSC ERROR: [48]PETSC ERROR: See docs/index.html for manual pages.
+./scat on a arch-linux2-fftw named gcn-14-22.sdsc.edu by nhantran Tue Apr  8 20:47:16 2014
+./scat on a arch-linux2-fftw named gcn-14-22.sdsc.edu by nhantran Tue Apr  8 20:47:16 2014
+[62]PETSC ERROR: [63]PETSC ERROR: [48]PETSC ERROR: ------------------------------------------------------------------------
+[58]PETSC ERROR: Libraries linked from /home/nhantran/local/src/petsc-3.4.3/arch-linux2-fftw/lib
+[62]PETSC ERROR: Libraries linked from /home/nhantran/local/src/petsc-3.4.3/arch-linux2-fftw/lib
+------------------------------------------------------------------------
+./scat on a arch-linux2-fftw named gcn-14-22.sdsc.edu by nhantran Tue Apr  8 20:47:16 2014
+[63]PETSC ERROR: [48]PETSC ERROR: [62]PETSC ERROR: Configure run at Sat Mar 22 19:43:57 2014
+[51]PETSC ERROR: Configure run at Sat Mar 22 19:43:57 2014
+See docs/index.html for manual pages.
+[63]PETSC ERROR: Libraries linked from /home/nhantran/local/src/petsc-3.4.3/arch-linux2-fftw/lib
+[48]PETSC ERROR: [58]PETSC ERROR: Configure options --with-scalar-type=complex --with-precision=single --with-debugging=no --download-f-blas-lapack --with-fortran-kernels=generic --with-64-bit-indices=1
+Caught signal number 11 SEGV: Segmentation Violation, probably memory access out of range
+------------------------------------------------------------------------
+[63]PETSC ERROR: [62]PETSC ERROR: [51]PETSC ERROR: Configure run at Sat Mar 22 19:43:57 2014
+[58]PETSC ERROR: ------------------------------------------------------------------------
+[62]PETSC ERROR: Try option -start_in_debugger or -on_error_attach_debug[285]PETSC ERROR: aborting job:
+application called MPI_Abort(MPI_COMM_WORLD, 59) - process 281
+or try http://valgrind.org on GNU/linux and Apple Mac OS X to find memory corruption errors
+[278]PETSC ERROR: [274]PETSC ERROR: See docs/changes/index.html for recent updates.
+[276]PETSC ERROR: --------------------- Error Message ------------------------------------
+[285]PETSC ERROR: configure using --with-debugging=yes, recompile, link, and run 
+[278]PETSC ERROR: See docs/faq.html for hints about trouble shooting.
+[276]PETSC ERROR: Caught signal nu[167]PETSC ERROR: [174]PETSC ERROR: Configure run at Sat Mar 22 19:43:57 2014
+[164]PETSC ERROR: Caught signal number 11 SEGV: Segmentation Violation, probably memory access out of range
+[167]PETSC ERROR: [cli_175]: [172]PETSC ERROR: or see http://www.mcs.anl.gov/petsc/documentation/faq.html#valgrindConfigure options --with-scalar-type=complex --with-precision=single --with-debugging=no --download-f-blas-lapack --with-fortran-kernels=generic --with-64-bit-indices=1
+Try option -start_in_debugger or -on_error_attach_debugger
+[174]PETSC ERROR: aborting job:
+application called MPI_Abort(MPI_COMM_WORLD, 59) - process 175
+Configure options --with-scalar-type=complex --with-precision=single --with-debugging=no --download-f-blas-lapack --with-fortran-kernels=generic --with-64-bit-indices=1
+[172]PETSC ERROR: or try http://valgrind.org on GNU/linux and Apple Mac OS X to find memory corruption errors
+[164]PETSC ERROR: [167]PETSC ERROR: [174]PETSC ERROR: ------------------------------------------------------------------------
+------------------------------------------------------------------------
+[167]PETSC ERROR: configure using --with-debugging=yes, recompile, link, and run 
+User provided function() line 0 in unknown directory unknown file
+[174]PETSC ERROR: [164]PETSC ERROR: to get more information on the crash.
+User provided function() line 0 in unknown directory unknown file
+------------------------------------------------------------------------
+[163]PETSC ERROR: [174]PETSC ERROR: [161]PETSC ERROR: Signal received!
+--------------------- Error Message ------------------------------------
+[174]PETSC ERROR: Caught signal number 11 SEGV: Segmentation Violation, probably memory access out of range
+[171]PETSC ERROR: Signal received!
+or try http://valgrind.org on GNU/linux and Apple Mac OS X to find memory corruption errors
+[174]PETSC ERROR: Caught signal number 11 SEGV: Segmentation Violation, probably memory access out of range
+------------------------------------------------------------------------
+[168]PETSC ERROR: ------------------------------------------------------------------------
+[cli_167]: [171]PETSC ERROR: [161]PETSC ERROR: Try option -start_in_debugger or -on_error_attach_debugger
+Try option -start_in_debugger or -on_error_attach_debugger
+Petsc Release Version 3.4.3, Oct, 15, 2013 
+[161]PETSC ERROR: aborting job:
+application called MPI_Abort(MPI_COMM_WORLD, 59) - process 167
+[171]PETSC ERROR: [168]PETSC ERROR: or see http://www.mcs.anl.gov/petsc/documentation/faq.html#valgrindor see http://www.mcs.anl.gov/petsc/documentation/faq.html#valgrindSee docs/changes/index.html for recent updates.
+[168]PETSC ERROR:./scat on a arch-linux2-fftw named gcn-16-78.sdsc.edu by nhantran Tue Apr  8 20:47:15 2014
+aborting job:
+application called MPI_Abort(MPI_COMM_WORLD, 59) - process 228
+[237]PETSC ERROR: Configure options --with-scalar-type=complex --with-precision=single --with-debugging=no --download-f-blas-lapack --with-fortran-kernels=generic --with-64-bit-indices=1
+[232]PETSC ERROR: ------------------------------------------------------------------------
+[231]PETSC ERROR: Signal received!
+Libraries linked from /home/nhantran/local/src/petsc-3.4.3/arch-linux2-fftw/lib
+[226]PETSC ERROR: ------------------------------------------------------------------------
+[232]PETSC ERROR: [237]PETSC ERROR: [231]PETSC ERROR: ------------------------------------------------------------------------
+Configure run at Sat Mar 22 19:43:57 2014
+Caught signal number 11 SEGV: Segmentation Violation, probably memory access out of range
+[237]PETSC ERROR: [232]PETSC ERROR: [226]PETSC ERROR: User provided function() line 0 in unknown directory unknown file
+[235]PETSC ERROR: Petsc Release Version 3.4.3, Oct, 15, 2013 
+Configure options --with-scalar-type=complex --with-precision=single --with-debugging=no --download-f-blas-lapack --with-fortran-kernels=generic --with-64-bit-indices=1
+Try option -start_in_debugger or -on_error_attach_debugger
+[237]PETSC ERROR: [232]PETSC ERROR: [226]PETSC ERROR: ------------------------------------------------------------------------
+------------------------------------------------------------------------
+or see http://www.mcs.anl.gov/petsc/documentation/faq.html#valgrind[232]PETSC ERROR: See docs/changes/index.html for recent updates.
+[cli_231]: [235]PETSC ERROR: User provided function() line 0 in unknown diSee docs/changes/index.html for recent updates.
+or see http://www.mcs.anl.gov/petsc/documentation/faq.html#valgrind[207]PETSC ERROR: [197]PETSC ERROR: [195]PETSC ERROR: [199]PETSC ERROR: or see http://www.mcs.anl.gov/petsc/documentation/faq.html#valgrindto get more information on the crash.
+or try http://valgrind.org on GNU/linux and Apple Mac OS X to find memory corruption errors
+See docs/faq.html for hints about trouble shooting.
+[207]PETSC ERROR: [195]PETSC ERROR: [199]PETSC ERROR: or try http://valgrind.org on GNU/linux and Apple Mac OS X to find memory corruption errors
+See docs/index.html for manual pages.
+configure using --with-debugging=yes, recompile, link, and run 
+[207]PETSC ERROR: [199]PETSC ERROR: [195]PETSC ERROR: [197]PETSC ERROR: configure using --with-debugging=yes, recompile, link, and run 
+to get more information on the crash.
+------------------------------------------------------------------------
+[207]PETSC ERROR: ---------------aborting job:
+application called MPI_Abort(MPI_COMM_WORLD, 59) - process 487
+[gcn-9-13.sdsc.edu:mpispawn_30][readline] Unexpected End-Of-File on file descriptor 8. MPI process died?
+[gcn-9-13.sdsc.edu:mpispawn_30][mtpmi_processops] Error while reading PMI socket. MPI process died?
+[gcn-9-13.sdsc.edu:mpispawn_30][child_handler] MPI process (rank: 485, pid: 50644) exited with status 59
+[gcn-9-13.sdsc.edu:mpispawn_30][child_handler] MPI process (rank: 484, pid: 50643) exited with status 59
+[gcn-9-13.sdsc.edu:mpispawn_30][child_handler] MPI process (rank: 480, pid: 50639) exited with status 59
+[gcn-9-13.sdsc.edu:mpispawn_30][child_handler] MPI process (rank: 481, pid: 50640) exited with status 59
+[gcn-9-13.sdsc.edu:mpispawn_30][child_handler] MPI process (rank: 482, pid: 50641) exited with status 59
+[gcn-9-13.sdsc.edu:mpispawn_30][child_handler] MPI process (rank: 483, pid: 50642) exited with status 59
+[gcn-9-13.sdsc.edu:mpispawn_30][child_handler] MPI process (rank: 486, pid: 50645) exited with status 59
+[gcn-9-13.sdsc.edu:mpispawn_30][child_handler] MPI process (rank: 487, pid: 50646) exited with status 59
+[gcn-9-13.sdsc.edu:mpispawn_30][child_handler] MPI process (rank: 488, pid: 50647) exited with status 59
+------------------------------------------------
+[136]PETSC ERROR: [140]PETSC ERROR: [138]PETSC ERROR: [139]PETSC ERROR: configure using --with-debugging=yes, recompile, link, and run 
+[128]PETSC ERROR: See docs/index.html for manual pages.
+User provided function() line 0 in unknown directory unknown file
+Petsc Release Version 3.4.3, Oct, 15, 2013 
+Signal received!
+Signal received!
+[139]PETSC ERROR: [142]PETSC ERROR: ------------------------------------------------------------------------
+[138]PETSC ERROR: [130]PETSC ERROR: [128]PETSC ERROR: [cli_140]: See docs/changes/index.html for recent updates.
+or try http://valgrind.org on GNU/linux and Apple Mac OS X to find memory corruption errors
+------------------------------------------------------------------------
+[139]PETSC ERROR: [130]PETSC ERROR: [128]PETSC ERROR: [137]PETSC ERROR: [138]PETSC ERROR: Petsc Release Version 3.4.3, Oct, 15, 2013 
+Petsc Release Version 3.4.3, Oct, 15, 2013 
+[139]PETSC ERROR: ./scat on a arch-linux2-fftw named gcn-15-54.sdsc.edu by nhantran Tue Apr  8 20:47:15 2014
+[137]PETSC ERROR: configure using --with-debugging=yes, recompile, link, and run 
+See docs/changes/index.html for recent updates.
+[130]PETSC ERROR: [137]PETSC ERROR: aborting job:
+application called MPI_Abort(MPI_COMM_WORLD, 59) - process 143
+to get more information on the crash.
+See docs/faq.html for hints about trouble shooting.
+[134]PETSC ERROR: [137]PETSC ERROR: See docs/index.html for manual pages.
+[135]PETSC ERROR: [137]PETSC ERROR: Configure options --with-scalar-type=complex --with-precision=single --with-debugging=no --download-f-blas-lapack --with-fortran-kernels=generic --with-64-bit-indices=1
+------------------------------------------------------------------------
+[134]PETSC ERROR: [130]PETSC ERROR: Configure options --with-scalar-type=complex --with-precision=single --with-debugging=no --download-f-blas-lapack --with-fortran-kernels=generic --with-64-bit-indices=1
+[137]PETSC ERROR: ------------------------------------------------------------------------
+--------------------- Error Message ------------------------------------
+[135]PETSC ERROR: [134]PETSC ERROR: ./scat on a arch-linux2-fftw named gcn-15-54.sdsc.edu by nhantran Tue Apr  8 20:47:15 2014
+------------------------------------------------------------------------
+[130]PETSC ERROR: [137]PETSC ERROR: User provided function() line 0 in unknown directory unknown file
+[135]PETSC ERROR: Signal received!
+User provided func[377]PETSC ERROR: Configure run at Sat Mar 22 19:43:57 2014
+[377]PETSC ERROR: Configure options --with-scalar-type=complex --with-precision=single --with-debugging=no --download-f-blas-lapack --with-fortran-kernels=generic --with-64-bit-indices=1
+[377]PETSC ERROR: ------------------------------------------------------------------------
+[377]PETSC ERROR: User provided function() line 0 in unknown directory unknown file
+[cli_377]: aborting job:
+application called MPI_Abort(MPI_COMM_WORLD, 59) - process 377
+[379]PETSC ERROR: ------------------------------------------------------------------------
+Petsc Release Version 3.4.3, Oct, 15, 2013 
+[379]PETSC ERROR: [375]PETSC ERROR: See docs/changes/index.html for recent updates.
+--------------------- Error Message ------------------------------------
+[372]PETSC ERROR: [375]PETSC ERROR: [373]PETSC ERROR: [379]PETSC ERROR: See docs/faq.html for hints about trouble shooting.
+Signal received!
+[379]PETSC ERROR: [381]PETSC ERROR: Ca[474]PETSC ERROR: to get more information on the crash.
+--------------------- Error Message ------------------------------------
+[471]PETSC ERROR: Signal received!
+[478]PETSC ERROR: [474]PETSC ERROR: Libraries linked from /home/nhantran/local/src/petsc-3.4.3/arch-linux2-fftw/lib
+./scat on a arch-linux2-fftw named gcn-9-12.sdsc.edu by nhantran Tue Apr  8 20:47:15 2014
+Signal received!
+------------------------------------------------------------------------
+[471]PETSC ERROR: [478]PETSC ERROR: [474]PETSC ERROR: Configure run at Sat Mar 22 19:43:57 2014
+[472]PETSC ERROR: Petsc Release Version 3.4.3, Oct, 15, 2013 
+------------------------------------------------------------------------
+[471]PETSC ERROR: [474]PETSC ERROR: --------------------- Error Message ------------------------------------
+[478]PETSC ERROR: [475]PETSC ERROR: See docs/changes/index.html for recent updates.
+Petsc Release Version 3.4.3, Oct, 15, 2013 
+Configure options --with-scalar-type=complex --with-precision=single --with-debugging=no --download-f-blas-lapack --with-fortran-kernels=generic --with-64-bit-indices=1
+[472]PETSC ERROR: [474]PETSC ERROR: [478]PETSC ERROR: Libraries linked from /home/nhantran/local/src/petsc-3.4.3/arch-linux2-fftw/lib
+[471]PETSC ERROR: See docs/faq.html for hints about trouble shooting.
+See docs/changes/index.html for recent updates.
+[475]PETSC ERROR: Signal received!
+[478]PETSC ERROR: -----------aborting job:
+application called MPI_Abort(MPI_COMM_WORLD, 59) - process 267
+[266]PETSC ERROR: [257]PETSC ERROR: Configure options --with-scalar-type=complex --with-precision=single --with-debugging=no --download-f-blas-lapack --with-fortran-kernels=generic --with-64-bit-indices=1
+--------------------- Error Message ------------------------------------
+[266]PETSC ERROR: Configure run at Sat Mar 22 19:43:57 2014
+------------------------------------------------------------------------
+[257]PETSC ERROR: [262]PETSC ERROR: [266]PETSC ERROR: Configure options --with-scalar-type=complex --with-precision=single --with-debugging=no --download-f-blas-lapack --with-fortran-kernels=generic --with-64-bit-indices=1
+[268]PETSC ERROR: User provided function() line 0 in unknown directory unknown file
+[257]PETSC ERROR: to get more information on the crash.
+Signal received!
+----[200]PETSC ERROR: Configure run at Sat Mar 22 19:43:57 2014
+[200]PETSC ERROR: Configure options --with-scalar-type=complex --with-precision=single --with-debugging=no --download-f-blas-lapack --with-fortran-kernels=generic --with-64-bit-indices=1
+[200]PETSC ERROR: ------------------------------------------------------------------------
+[200]PETSC ERROR: User provided function() line 0 in unknown directory unknown file
+[cli_200]: aborting job:
+application called MPI_Abort(MPI_COMM_WORLD, 59) - process 200
+[cli_193]: ------------------------------------------------------------------------
+[cli_201]: [198]PETSC ERROR:[136]PETSC ERROR: [138]PETSC ERROR: Configure options --with-scalar-type=complex --with-precision=single --with-debugging=no --download-f-blas-lapack --with-fortran-kernels=generic --with-64-bit-indices=1
+[139]PETSC ERROR: Configure run at Sat Mar 22 19:43:57 2014
+Configure options --with-scalar-type=complex --with-precision=single --with-debugging=no --download-f-blas-lapack --with-fortran-kernels=generic --with-64-bit-indices=1
+[128]PETSC ERROR: [136]PETSC ERROR: [138]PETSC ERROR: ------------------------------------------------------------------------
+See docs/faq.html for hints about trouble shooting.
+------------------------------------------------------------------------
+Configure options --with-scalar-type=complex --with-precision=single --with-debugging=no --download-f-blas-lapack --with-fortran-kernels=generic --with-64-bit-indices=1
+[128]PETSC ERROR: [139]PETSC ERROR: [136]PETSC ERROR: See docs/index.html for manual pages.
+[138]PETSC ERROR: [132]PETSC ERROR: User provided function() line 0 in unknown directory unknown file
+------------------------------------------------------------------------
+See docs/faq.html for hints about trouble shooting.
+------------------------------------------------------------------------
+[129]PETSC ERROR: [139]PETSC ERROR: [138]PETSC ERROR: [132]PETSC ERROR: ------------------------------------------------------------------------
+Caught signal number 11 SEGV: Segmentation Violation, probably memory access out of range
+See docs/index.html for manual pages.
+[142]PETSC ERROR: [132]PETSC ERROR: [129]PETSC ERROR: User provided function() line 0 in unknown directory unknown file
+------------------------------------------------------------------------
+Try option -start_in_debugger or -on_error_attach_debugger
+See docs/faq.html for hints about trouble shooting.
+[132]PETSC ERROR: [129]PETSC ERROR: or see http://www.mcs.anl.gov/petsc/documentation/faq.html#valgrind./scat on a arch-linux2-fftw named gcn-15-54.sdsc.edu by nhantran Tue Apr  8 20:47:15 2014
+[142]PETSC ERROR: [129]PETSC ERROR: [132]PETSC ERROR: See docs/index.html for manual pages.
+or try http://valgrind.org on GNU/linux and Apple Mac OS X to find memory corruption errors
+[142]PETSC ERROR: [129]PETSC ERROR: Libraries linked from /home/nhantran/local/src/petsc-3.4.3/arch-linux2-fftw/lib
+[cli_138]: ------------------------------------------------------------------------
+configure using --with-debugging=yes, recompile, link, and run 
+[132]PETSC ERROR: [142]PETSC ERROR: [129]PETSC ERROR: Configure run at Sat Mar 22 19:43:57 2014
+aborting job:
+application called MPI_Abort(MPI_COMM_WORLD, 59) - process 138
+[132]PETSC ERROR: to get more information on the crash.
+./scat on a arch-linux2-fftw named gcn-15-54.sdsc.edu by nhantran Tue Apr  8 20:47:15 2014
+Configure options --with-scalar-type=complex --with-precision=single --with-debugging=no --download-f-blas-lapack --with-fortran-kernels=generic --with-64-bit-indices=1
+[142]PETSC ERROR: [132]PETSC ERROR: ------------------------------------------------------------------------
+[129]PETSC ERROR: Libraries linked from /home/nhantran/local/src/petsc-3.4.3/arch-linux2-fftw/lib
+[132]PETSC ERROR: --------------------- Error Message ------------------------------------
+[142]PETSC ERROR: User provided function() line 0 in unknown directory unknown file
+Configure run at Sat Mar 22 19:43:57 2014
+[129]PETSC ERROR: [142]PETSC ERROR: Signal received!
+Configure options --with-scalar-type=complex --with-precision=single --with-debugging=no --down[373]PETSC ERROR: [379]PETSC ERROR: [372]PETSC ERROR: ------------------------------------------------------------------------
+Configure options --with-scalar-type=complex --with-precision=single --with-debugging=no --download-f-blas-lapack --with-fortran-kernels=generic --with-64-bit-indices=1
+[373]PETSC ERROR: [379]PETSC ERROR: Signal received!
+------------------------------------------------------------------------
+[372]PETSC ERROR: ./scat on a arch-linux2-fftw named gcn-2-48.sdsc.edu by nhantran Tue Apr  8 20:47:15 2014
+[379]PETSC ERROR: ------------------------------------------------------------------------
+[373]PETSC ERROR: User provided function() line 0 in unknown directory unknown file
+[372]PETSC ERROR: Libraries linked from /home/nhantran/local/src/petsc-3.4.3/arch-linux2-fftw/lib
+Petsc Release Version 3.4.3, Oct, 15, 2013 
+[373]PETSC ERROR: [372]PETSC ERROR: Configure run at Sat Mar 22 19:43:57 2014
+[373]PETSC ERROR: See docs/changes/index.html for recent updates.
+Configure options --with-scalar-type=complex --with-precision=single --with-debugging=no --download-f-blas-lapack --with-fortran-kernels=generic --with-64-bit-indices=1
+[372]PETSC ERROR: [373]PETSC ERROR: See docs/faq.html for hints about trouble shooting.
+------------------------------------------------------------------------
+[372]PETSC ERROR: [373]PETSC ERROR: See docs/index.html for manual pages.
+User provided function() line 0 in unknown directory unknown file
+[372]PETSC ERROR: [cli_379]: ------------------------------------------------------------------------
+[372]PETSC ERROR: aborting job:
+application called MPI_Abort(MPI_COMM_WORLD, 59) - process 379
+./scat on a arch-linux2-fftw named gcn-2-48.sdsc.edu by nhantran Tue Apr  8 20:47:15 2014
+[372]PETSC ERROR: Libraries linked from /home/nhantran/local/src/petsc-3.4.3/arch-linux2-fftw/lib
+[372]PETSC ERROR: [cli_373]: Configure run at Sat Mar 22 19:43:57 2014
+[372]PETSC ERROR: Configure options --with-scalar-type=complex --with-precision=single --with-debugging=no --download-f-blas-lapack --with-fortran-kernels=generic --w[cli_83]: aborting job:
+application called MPI_Abort(MPI_COMM_WORLD, 59) - process 83
+[gcn-14-27.sdsc.edu:mpispawn_5][readline] Unexpected End-Of-File on file descriptor 12. MPI process died?
+[------------------------------------------------------------------------
+[309]PETSC ERROR: User provided function() line 0 in unknown directory unknown file
+[cli_309]: aborting job:
+application called MPI_Abort(MPI_COMM_WORLD, 59) - process 309
+[gcn-2-34.sdsc.edu:mpispawn_19][readline] Unexpected End-Of-File on file descriptor 13. MPI process died?
+[gcn-2-34.sdsc.edu:mpispawn_19][mtpmi_processops] Error while reading PMI socket. MPI process died?
+[gcn-2-34.sdsc.edu:mpispawn_19][child_handler] MPI process (rank: 307, pid: 105750) exited with status 59
+[gcn-2-34.sdsc.edu:[gcn-16-66.sdsc.edu:mpispawn_12][child_handler] MPI process (rank: 197, pid: 117134) exited with status 59
+[gcn-16-66.sdsc.edu:mpispawn_12][child_handler] MPI process (rank: 199, pid: 117136) exited with status 59
+[gcn-16-66.sdsc.edu:mpispawn_12][child_handler] MPI process (rank: 196, pid: 117133) exited with status 59
+[gcn-16-66.sdsc.edu:mpispawn_12][child_handler] MPI process (rank: 192, pid: 117129) exited with status 59
+[gcn-16-66.sdsc.edu:mpispawn_12][child_handler] MPI process (rank: 194, pid: 117131) exited with status 59
+[gcn-16-66.sdsc.edu:mpispawn_12][child_handler] MPI process (rank: 195, pid: 117132) exited with status 59
+[gcn-16-66.sdsc.edu:mpispawn_12][child_handler] MPI process (rank: 198, pid: 117135) exited with status 59
+[gcn-16-66.sdsc.edu:mpispawn_12][child_handler] MPI process (rank: 200, pid: 117137) exited with status 59
+[gcn-16-66.sdsc.edu:mpispawn_12][child_handler] MPI process (rank: 201, pid: 117138) exited with status 59
+[gcn-16-66.sdsc.edu:mpispawn_12][child_handler] MPI process (rank: 202, pid: 117139) exited with status 59
+[gcn-16-66.sdsc.edu:mpispawn_12][child_handler] MPI process (rank: 193, pid: 117130) exited with status 59
+[gcn-16-66.sdsc.edu:mpispawn_12][child_handler] MPI process (rank: 204, pid: 117141) exited with status 59
+[gcn-16-66.sdsc.edu:mpispawn_12][child_handler] MPI process (rank: 205, pid: 117142) exited with status 59
+[gcn-16-66.sdsc.edu:mpispawn_12][child_handler] MPI process (rank: 206, pid: 117143) exited with status 59
+[gcn-16-66.sdsc.edu:mpispawn_12][child_handler] MPI process (rank: 207, pid: 117144) exited with status 59
+[gcn-9-14.sdsc.edu:mpispawn_31][read_size] Unexpected End-Of-File on file descriptor 21. MPI process died?
+[gcn-9-14.sdsc.edu:mpispawn_31][read_size] Unexpected End-Of-File on file descriptor 21. MPI process died?
+[gcn-9-14.sdsc.edu:mpispawn_31][handle_mt_peer] Error while reading PMI socket. MPI process died?
+[gcn-9-21.sdsc.edu:mpispawn_34][read_size] Unexpected End-Of-File on file descriptor 21. MPI process died?
+[gcn-9-21.sdsc.edu:mpispawn_34][read_size] Unexpected End-Of-File on file descriptor 21. MPI process died?
+[gcn-9-21.sdsc.edu:mpispawn_34][handle_mt_peer] Error while reading PMI socket. MPI process died?
+[gcn-9-16.sdsc.edu:mpispawn_33][read_size] Unexpected End-Of-File on file descriptor 21. MPI process died?
+[gcn-9-16.sdsc.edu:mpispawn_33][read_size] Unexpected End-Of-File on file descriptor 21. MPI process died?
+[gcn-9-16.sdsc.edu:mpispawn_33][handle_mt_peer] Error while reading PMI socket. MPI process died?
+cation called MPI_Abort(MPI_COMM_WORLD, 59) - process 439
+aborting job:
+application called MPI_Abort(MPI_COMM_WORLD, 59) - process 436
+Try option -start_in_debugger or -on_error_attach_debugger
+[437]PETSC ERROR: or see http://www.mcs.anl.gov/petsc/documentation/faq.html#valgrind[437]PETSC ERROR: or try http://valgrind.org on GNU/linux and Apple Mac OS X to find memory corruption errors
+[437]PETSC ERROR: configure using --with-debugging=yes, recompile, link, and run 
+[437]PETSC ERROR: to get more information on the crash.
+[437]PETSC ERROR: --------------------- Error Message ------------------------------------
+[437]PETSC ERROR: Signal received!
+[437]PETSC ERROR: ------------------------------------------------------------------------
+[437]PETSC ERROR: Petsc Release Version 3.4.3, Oct, 15, 2013 
+[437]PETSC ERROR: See docs/changes/index.html for recent updates.
+[437]PETSC ERROR: See docs/faq.html for hints about trouble shooting.
+[437]PETSC ERROR: See docs/index.html for manual pages.
+[437]PETSC ERROR: ------------------------------------------------------------------------
+[437]PETSC ERROR: ./scat on a arch-linux2-fftw named gcn-6-63.sdsc.edu by nhantran Tue Apr  8 20:47:15 2014
+[437]PETSC ERROR: Libraries linked from /home/nhantran/local/src/petsc-3.4.3/arch-linux2-fftw/lib
+[437]PETSC ERROR: Configure run at Sat Mar 22 19:43:57 2014
+[437]PETSC ERROR: Configure options --with-scalar-type=complex --with-precision=single --with-debugging=no --download-f-blas-lapack --with-fortran-kernels=generic --with-64-bit-indices=1
+[437]PETSC ERROR: ------------------------------------------------------------------------
+[437]PETSC ERROR: User provided function() line 0 in unknown directory unknown file
+[cli_437]: aborting job:
+application called MPI_Abort(MPI_COMM_WORLD, 59) - process 437
+[433]PETSC ERROR: [435]PETSC ERROR: Configure run at Sat Mar 22 19:43:57 2014
+to get more information on the crash.
+[433]PETSC ERROR: Configure options --with-scalar-type=complex --with-precision=single --with-debugging=no --download-f-blas-lapack --with-fortran-kernels=generic --with-64-bit-indices=1
+[435]PETSC ERROR: [433]PETSC ERROR: --------------------- Error Message ------------------------------------
+------------------------------------------------------------------------
+[433]PETSC ERROR: [435]PETSC ERROR: User provided function() line 0 in unknown directory unknown file
+Signal received!
+[435]PETSC ERROR: ------------------------------------------------------------------------
+[435]PETSC ERROR: Petsc Release Version 3.4.3, Oct, 15, 2013 
+[435]PETSC ERROR: See docs/changes/index.html for recent updates.
+to get more information on the crash.
+[435]PETSC ERROR: See docs/faq.html for hints about trouble shooting.
+[435]PETSC ERROR: See docs/index.html for manual pages.
+[cli_433]: [435]PETSC ERROR: ------------------------------------------------------------------------
+[435]PETSC ERROR: aborting job:
+application called MPI_Abort(MPI_COMM_WORLD, 59) - process 433
+./scat on a arch-linux2-fftw named gcn-6-63.sdsc.edu by nhantran Tue Apr  8 20:47:15 2014
+[435]PETSC ERROR: Libraries linked from /home/nhantran/local/src/petsc-3.4.3/arch-linux2-fftw/lib
+[435]PETSC ERROR: Configure run at Sat Mar 22 19:43:57 2014
+[435]PETSC ERROR: [447]PETSC ERROR: Configure options --with-scalar-type=complex --with-precision=single --with-debugging=no --download-f-blas-lapack --with-fortran-kernels=generic --with-64-bit-indices=1
+[435]PETSC ERROR: --------------------- Error Message ------------------------------------
+------------------------------------------------------------------------
+[435]PETSC ERROR: [447]PETSC ERROR: User provided function() line 0 in unknown directory unknown file
+Signal received!
+[447]PETSC ERROR: ------------------------------------------------------------------------
+[447]PETSC ERROR: Petsc Release Version 3.4.3, Oct, 15, 2013 
+[447]PETSC ERROR: See docs/changes/index.html for recent updates.
+[cli_435]: [447]PETSC ERROR: See docs/faq.html for hints about trouble shooting.
+[447]PETSC ERROR: aborting job:
+application called MPI_Abort(MPI_COMM_WORLD, 59) - process 435
+See docs/index.html for manual pages.
+[447]PETSC ERROR: ------------------------------------------------------------------------
+[447]PETSC ERROR: ./scat on a arch-linux2-fftw named gcn-6-63.sdsc.edu by nhantran Tue Apr  8 20:47:15 2014
+[447]PETSC ERROR: Libraries linked from /home/nhantran/local/src/petsc-3.4.3/arch-linux2-fftw/lib
+[447]PETSC ERROR: Configure run at Sat Mar 22 19:43:57 2014
+[447]PETSC ERROR: Configure options --with-scalar-type=complex --with-precision=single --with-debugging=no --download-f-blas-lapack --with-fortran-kernels=generic --with-64-bit-indices=1
+[447]PETSC ERROR: ------------------------------------------------------------------------
+[447]PETSC ERROR: User provided function() line 0 in unknown directory unknown file
+[cli_447]: aborting job:
+application called MPI_Abort(MPI_COMM_WORLD, 59) - process 447
+[434]PETSC ERROR: [442]PETSC ERROR: See docs/index.html for manual pages.
+[434]PETSC ERROR: ------------------------------------------------------------------------
+Caught signal number 11 SEGV: Segmentation Violation, probably memory access out of range
+[434]PETSC ERROR: [442]PETSC ERROR: ./scat on a arch-linux2-fftw named gcn-6-63.sdsc.edu by nhantran Tue Apr  8 20:47:15 2014
+Try option -start_in_debugger or -on_error_attach_debugger
+[434]PETSC ERROR: [442]PETSC ERROR: or see http://www.mcs.anl.gov/petsc/documentation/faq.html#valgrindLibraries linked from /home/nhantran/local/src/petsc-3.4.3/arch-linux2-fftw/lib
+[442]PETSC ERROR: [434]PETSC ERROR: or try http://valgrind.org on GNU/linux and Apple Mac OS X to find memory corruption errors
+Configure run at Sat Mar 22 19:43:57 2014
+[444]PETSC ERROR: [434]PETSC ERROR: [442]PETSC ERROR: Configure options --with-scalar-type=complex --with-precision=single --with-debugging=no --download-f-blas-lapack --with-fortran-kernels=generic --with-64-bit-indices=1
+configure using --with-debugging=yes, recompile, link, and run 
+[434]PETSC ERROR: [442]PETSC ERROR: ------------------------------------------------------------------------
+to get more information on the crash.
+[434]PETSC ERROR: Caught signal number 11 SEGV: Segmentation Violation, probably memory access out of range
+User provided function() line 0 in unknown directory unknown file
+[442]PETSC ERROR: --------------------- Error Message ------------------------------------
+[444]PETSC ERROR: Try option -start_in_debugger or -on_error_attach_debugger
+[442]PETSC ERROR: [444]PETSC ERROR: Signal received!
+or see http://www.mcs.anl.gov/petsc/documentation/faq.html#valgrind[442]PETSC ERROR: [444]PETSC ERROR: ------------------------------------------------------------------------
+or try http://valgrind.org on GNU/linux and Apple Mac OS X to find memory corruption errors
+[442]PETSC ERROR: [444]PETSC ERROR: Petsc Release Version 3.4.3, Oct, 15, 2013 
+configure using --with-debugging=yes, recompile, link, and run 
+[cli_434]: [442]PETSC ERROR: [444]PETSC ERROR: to get more information on the crash.
+See docs/changes/index.html for recent updates.
+[442]PETSC ERROR: aborting job:
+application called MPI_Abort(MPI_COMM_WORLD, 59) - process 434
+See docs/faq.html for hints about trouble shooting.
+[442]PETSC ERROR: See docs/index.html for manual pages.
+[442]PETSC ERROR: ------------------------------------------------------------------------
+[444]PETSC ERROR: [442]PETSC ERROR: --------------------- Error Message ------------------------------------
+./scat on a arch-linux2-fftw named gcn-6-63.sdsc.edu by nhantran Tue Apr  8 20:47:15 2014
+[444]PETSC ERROR: [442]PETSC ERROR: Signal received!
+Libraries linked from /home/nhantran/local/src/petsc-3.4.3/arch-linux2-fftw/lib
+[444]PETSC ERROR: [442]PETSC ERROR: ------------------------------------------------------------------------
+Configure run at Sat Mar 22 19:43:57 2014
+[444]PETSC ERROR: [442]PETSC ERROR: Petsc Release Version 3.4.3, Oct, 15, 2013 
+Configure options --with-scalar-type=complex --with-precision=single --with-debugging=no --download-f-blas-lapack --with-fortran-kernels=generic --with-64-bit-indices=1
+[444]PETSC ERROR: [442]PETSC ERROR: ------------------------------------------------------------------------
+See docs/changes/index.html for recent updates.
+[442]PETSC ERROR: [444]PETSC ERROR: User provided function() line 0 in unknown directory unknown file
+See docs/faq.html for hints about trouble shooting.
+[444]PETSC ERROR: See docs/index.html for manual pages.
+[444]PETSC ERROR: ------------------------------------------------------------------------
+[444]PETSC ERROR: ./scat on a arch-linux2-fftw named gcn-6-63.sdsc.edu by nhantran Tue Apr  8 20:47:15 2014
+[444]PETSC ERROR: Libraries linked from /home/nhantran/local/src/petsc-3.4.3/arch-linux2-fftw/lib
+[444]PETSC ERROR: Configure run at Sat Mar 22 19:43:57 2014
+[cli_442]: [444]PETSC ERROR: Configure options --with-scalar-type=complex --with-precision=single --with-debugging=no --download-f-blas-lapack --with-fortran-kernels=generic --with-64-bit-indices=1
+[444]PETSC ERROR: ------------------------------------------------------------------------
+aborting job:
+application called MPI_Abort(MPI_COMM_WORLD, 59) - process 442
+[444]PETSC ERROR: User provided function() line 0 in unknown directory unknown file
+[cli_444]: aborting job:
+application called MPI_Abort(MPI_COMM_WORLD, 59) - process 444
+aborting job:
+application called MPI_Abort(MPI_COMM_WORLD, 59) - process 438
+[440]PETSC ERROR: Libraries linked from /home/nhantran/local/src/petsc-3.4.3/arch-linux2-fftw/lib
+[440]PETSC ERROR: Configure run at Sat Mar 22 19:43:57 2014
+[440]PETSC ERROR: Configure options --with-scalar-type=complex --with-precision=single --with-debugging=no --download-f-blas-lapack --with-fortran-kernels=generic --with-64-bit-indices=1
+[440]PETSC ERROR: ------------------------------------------------------------------------
+[440]PETSC ERROR: User provided function() line 0 in unknown directory unknown file
+User provided function() line 0 in unknown directory unknown file
+[cli_440]: aborting job:
+application called MPI_Abort(MPI_COMM_WORLD, 59) - process 440
+[cli_443]: aborting job:
+application called MPI_Abort(MPI_COMM_WORLD, 59) - process 443
+[gcn-6-63.sdsc.edu:mpispawn_27][readline] Unexpected End-Of-File on file descriptor 13. MPI process died?
+[gcn-6-63.sdsc.edu:mpispawn_27][mtpmi_processops] Error while reading PMI socket. MPI process died?
+[gcn-6-63.sdsc.edu:mpispawn_27][child_handler] MPI process (rank: 445, pid: 29466) exited with status 59
+[gcn-6-63.sdsc.edu:mpispawn_27][child_handler] MPI process (rank: 441, pid: 29462) exited with status 59
+[gcn-6-63.sdsc.edu:mpispawn_27][child_handler] MPI process (rank: 440, pid: 29461) exited with status 59
+[gcn-6-63.sdsc.edu:mpispawn_27][child_handler] MPI process (rank: 435, pid: 29456) exited with status 59
+[gcn-6-63.sdsc.edu:mpispawn_27][child_handler] MPI process (rank: 434, pid: 29455) exited with status 59
+[gcn-6-63.sdsc.edu:mpispawn_27][child_handler] MPI process (rank: 433, pid: 29454) exited with status 59
+[gcn-6-63.sdsc.edu:mpispawn_27][child_handler] MPI process (rank: 436, pid: 29457) exited with status 59
+[gcn-6-63.sdsc.edu:mpispawn_27][child_handler] MPI process (rank: 437, pid: 29458) exited with status 59
+[gcn-6-63.sdsc.edu:mpispawn_27][child_handler] MPI process (rank: 438, pid: 29459) exited with status 59
+[gcn-6-63.sdsc.edu:mpispawn_27][child_handler] MPI process (rank: 439, pid: 29460) exited with status 59
+[gcn-6-63.sdsc.edu:mpispawn_27][child_handler] MPI process (rank: 442, pid: 29463) exited with status 59
+[gcn-6-63.sdsc.edu:mpispawn_27][child_handler] MPI process (rank: 443, pid: 29464) exited with status 59
+[gcn-6-63.sdsc.edu:mpispawn_27][child_handler] MPI process (rank: 432, pid: 29453) exited with status 59
+[gcn-6-63.sdsc.edu:mpispawn_27][child_handler] MPI process (rank: 444, pid: 29465) exited with status 59
+[gcn-6-63.sdsc.edu:mpispawn_27][child_handler] MPI process (rank: 446, pid: 29467) exited with status 59
+[gcn-6-63.sdsc.edu:mpispawn_27][child_handler] MPI process (rank: 447, pid: 29468) exited with status 59

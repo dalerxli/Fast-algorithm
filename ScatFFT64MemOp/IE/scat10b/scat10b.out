@@ -1,0 +1,66 @@
+
+WARNING: Volume of the domain containing particles should be positive. Set the default value!
+WARNING: Distance between neighboring particles should be positive, greater than the radius of a particle, and less than the domain size. Set the default value!
+WARNING: Original refraction should not be zero. Set the default value!
+WARNING: Desired refraction should not be zero. Set the default value!
+WARNING: Distribution of particles should be positive. Set the default value!
+----------------------- SOLVING PARTICLE SCATTERING PROBLEM -----------------------
+
+Speed of wave, v:					34400
+Frequency, f:						1000
+Wave number, k:						0.182651
+Direction of plane wave, alpha:				(1, 0, 0)
+Kappa:							0.5
+Volume of the domain that contains all particles, |D|:	1
+Original refraction coefficient, n0:			1+0i
+Desired refraction coefficient, n:			-1+0.001i
+Distribution of particles, N:				316.228
+Boundary impedance, zeta:				2.65481e-09+5.30962e-06i
+Radius of one particle, a:				1.000000e-05
+Distance between two neighboring particles, d:		4.641589e-04
+Number of particles, M:					10000000000 (1.000000e+10)
+Number of sub cubes after partitioning the domain, P:	8000
+Total collocation points for solving integral equation:	64000
+
+Initializing done:	Mem used: 2.21225e+07 	Elapsed time:		0:0:0
+Setting up FFT:		Mem used: 2.68083e+07 	Elapsed time:		0:0:3
+Setting up RHS done:	Mem used: 2.15208e+08 	Elapsed time:		0:0:5
+
+Computing:
+Tolerance:	0.001
+Method:		cg
+Copy internal vector:	Mem used: 2.59857e+09 	Elapsed time:		0:0:10
+Apply FFT:		Mem used: 2.6064e+09 	Elapsed time:		0:2:34
+Pad Green cube:		Mem used: 4.24707e+09 	Elapsed time:		0:5:26
+Multiply vectors:	Mem used: 4.24707e+09 	Elapsed time:		0:5:27
+Apply iFFT:		Mem used: 2.61682e+09 	Elapsed time:		0:7:50
+Copy internal vector:	Mem used: 5.50762e+09 	Elapsed time:		0:8:0
+Assembly result:	Mem used: 2.61839e+09 	Elapsed time:		0:8:8
+
+Solving the original linear system (FFT):
+Norm of r=b-Ax:		0.710368
+Relative error |r|/|b|:	7.10368e-06
+Iterations:		1
+Elapsed time:		0:8:10
+
+Solving the reduced linear system:
+Norm of r=b-Ax:		0.000115603
+Relative error |r|/|b|:	1.29249e-06
+Iterations:		1
+Elapsed time:		0:8:11
+
+Solving the integral equation:
+Norm of r=b-Ax:		0.000329353
+Relative error |r|/|b|:	1.30188e-06
+Iterations:		1
+Elapsed time:		0:8:12
+
+Comparing solutions:
+(Original system)   vs (Reduced system):	0.0045016
+(Integral equation) vs (Original system):	0.00221249
+(Integral equation) vs (Reduced system):	-nan
+(Original system)   vs (Incident field):	1.53598e-06
+
+Started on:		Mon Feb  9 11:10:52 2015
+Finished on:		Mon Feb  9 11:19:25 2015
+Elapsed time:		0:8:33

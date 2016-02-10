@@ -1,0 +1,64 @@
+
+WARNING: Volume of the domain containing particles should be positive. Set the default value!
+WARNING: Particle radius should be positive and less than the domain size. Set the default value!
+WARNING: Distance between neighboring particles should be positive, greater than the radius of a particle, and less than the domain size. Set the default value!
+WARNING: Original refraction should not be zero. Set the default value!
+WARNING: Desired refraction should not be zero. Set the default value!
+WARNING: Distribution of particles should be positive. Set the default value!
+----------------------- SOLVING PARTICLE SCATTERING PROBLEM -----------------------
+
+Speed of wave, v:					34400
+Frequency, f:						1000
+Wave number, k:						0.182651
+Direction of plane wave, alpha:				(1, 0, 0)
+Kappa:							0.5
+Volume of the domain that contains all particles, |D|:	1
+Original refraction coefficient, n0:			1+0i
+Desired refraction coefficient, n:			-1+0.001i
+Distribution of particles, N:				1
+Boundary impedance, zeta:				5.71961e-06+0.0114392i
+Radius of one particle, a:				2.154435e-07
+Distance between two neighboring particles, d:		4.641589e-04
+Number of particles, M:					10000000000 (1.000000e+10)
+Number of sub cubes after partitioning the domain, P:	8000
+Total collocation points for solving integral equation:	27000
+
+Initializing done:	Mem used: 2.15695e+07 	Elapsed time:	0:0:0
+Setting up FFT:		Mem used: 2.62103e+07 	Elapsed time:	0:0:1
+Setting up RHS done:	Mem used: 2.42602e+08 	Elapsed time:	0:0:3
+
+Computing:
+Tolerance:	0.001
+Method:		cg
+Copy internal vector:	Mem used: 2.88603e+09 	Elapsed time:	0:0:9
+Apply FFT:		Mem used: 2.89235e+09 	Elapsed time:	0:11:8
+Pad Green cube:		Mem used: 4.68247e+09 	Elapsed time:	0:15:55
+Multiply vectors:	Mem used: 4.68247e+09 	Elapsed time:	0:15:55
+Apply iFFT:		Mem used: 2.90329e+09 	Elapsed time:	0:18:38
+Copy internal vector:	Mem used: 6.03659e+09 	Elapsed time:	0:18:48
+Assembly result:	Mem used: 2.90541e+09 	Elapsed time:	0:27:3
+
+Solving the original linear system (FFT):
+Norm of error:	1.54454
+Iterations:	1
+Elapsed time:	0:27:8
+
+Solving the reduced linear system:
+Norm of error:	0.00157355
+Iterations:	1
+Elapsed time:	0:27:8
+
+Solving the integral equation:
+Norm of error:	0.00297253
+Iterations:	1
+Elapsed time:	0:27:9
+
+Comparing solutions:
+(Original system)   vs (Reduced system):	0.00117679
+(Integral equation) vs (Original system):	0.00201345
+(Integral equation) vs (Reduced system):	-nan
+(Original system)   vs (Incident field):	7.7608e-06
+
+Started on:	Tue Apr 22 15:34:21 2014
+Finished on:	Tue Apr 22 16:02:15 2014
+Elapsed time:	0:27:54

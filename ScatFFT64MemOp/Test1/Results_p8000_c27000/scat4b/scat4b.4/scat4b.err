@@ -1,0 +1,56 @@
+[3]PETSC ERROR: --------------------- Error Message ------------------------------------
+[3]PETSC ERROR: Out of memory. This could be due to allocating
+[3]PETSC ERROR: too large an object or bleeding by not properly
+[3]PETSC ERROR: destroying unneeded objects.
+[3]PETSC ERROR: Memory allocated 0 Memory used by process 9765003264
+[3]PETSC ERROR: Try running with -malloc_dump or -malloc_log for info.
+[3]PETSC ERROR: Memory requested 6710886415!
+[3]PETSC ERROR: ------------------------------------------------------------------------
+[3]PETSC ERROR: Petsc Release Version 3.4.3, Oct, 15, 2013 
+[3]PETSC ERROR: See docs/changes/index.html for recent updates.
+[3]PETSC ERROR: See docs/faq.html for hints about trouble shooting.
+[3]PETSC ERROR: See docs/index.html for manual pages.
+[3]PETSC ERROR: ------------------------------------------------------------------------
+[3]PETSC ERROR: ./scat on a arch-linux2-fftw named gcn-18-21.sdsc.edu by nhantran Fri Apr 18 07:24:39 2014
+[3]PETSC ERROR: Libraries linked from /home/nhantran/local/src/petsc-3.4.3/arch-linux2-fftw/lib
+[3]PETSC ERROR: Configure run at Fri Apr 11 13:56:31 2014
+[3]PETSC ERROR: Configure options --with-scalar-type=complex --with-precision=single --with-debugging=no --download-f-blas-lapack --with-fortran-kernels=1 --with-64-bit-indices=1
+[3]PETSC ERROR: ------------------------------------------------------------------------
+[3]PETSC ERROR: PetscMallocAlign() line 46 in src/sys/memory/mal.c
+[3]PETSC ERROR: VecStashExpand_Private() line 211 in src/vec/vec/utils/vecstash.c
+[3]PETSC ERROR: VecStashValue_Private() line 288 in src/vec/vec/impls/mpi//home/nhantran/local/src/petsc-3.4.3/include/petsc-private/vecimpl.h
+[3]PETSC ERROR: VecSetValues_MPI() line 922 in src/vec/vec/impls/mpi/pdvec.c
+[3]PETSC ERROR: VecSetValues() line 872 in src/vec/vec/interface/rvector.c
+[3]PETSC ERROR: VecCopyN() line 953 in scat.c
+[3]PETSC ERROR: ScatSMatMultFFT() line 665 in scat.c
+[3]PETSC ERROR: MatMult() line 2179 in src/mat/interface/matrix.c
+[3]PETSC ERROR: KSP_MatMult() line 204 in src/ksp/ksp/impls/cg//home/nhantran/local/src/petsc-3.4.3/include/petsc-private/kspimpl.h
+[3]PETSC ERROR: KSPSolve_CG() line 219 in src/ksp/ksp/impls/cg/cg.c
+[3]PETSC ERROR: KSPSolve() line 441 in src/ksp/ksp/interface/itfunc.c
+[3]PETSC ERROR: main() line 194 in scat.c
+[cli_3]: aborting job:
+application called MPI_Abort(MPI_COMM_WORLD, 1) - process 3
+[gcn-18-21.sdsc.edu:mpispawn_1][readline] Unexpected End-Of-File on file descriptor 5. MPI process died?
+[gcn-18-21.sdsc.edu:mpispawn_1][mtpmi_processops] Error while reading PMI socket. MPI process died?
+[gcn-18-21.sdsc.edu:mpispawn_1][child_handler] MPI process (rank: 3, pid: 83246) exited with status 1
+[gcn-18-13.sdsc.edu:mpispawn_0][read_size] Unexpected End-Of-File on file descriptor 9. MPI process died?
+[gcn-18-13.sdsc.edu:mpispawn_0][read_size] Unexpected End-Of-File on file descriptor 9. MPI process died?
+[gcn-18-13.sdsc.edu:mpispawn_0][handle_mt_peer] Error while reading PMI socket. MPI process died?
+[gcn-19-24.sdsc.edu:mpispawn_7][read_size] Unexpected End-Of-File on file descriptor 8. MPI process died?
+[gcn-19-24.sdsc.edu:mpispawn_7][read_size] Unexpected End-Of-File on file descriptor 8. MPI process died?
+[gcn-19-24.sdsc.edu:mpispawn_7][handle_mt_peer] Error while reading PMI socket. MPI process died?
+[gcn-6-33.sdsc.edu:mpispawn_21][read_size] Unexpected End-Of-File on file descriptor 8. MPI process died?
+[gcn-6-33.sdsc.edu:mpispawn_21][read_size] Unexpected End-Of-File on file descriptor 8. MPI process died?
+[gcn-6-33.sdsc.edu:mpispawn_21][handle_mt_peer] Error while reading PMI socket. MPI process died?
+[gcn-18-27.sdsc.edu:mpispawn_3][read_size] Unexpected End-Of-File on file descriptor 8. MPI process died?
+[gcn-18-27.sdsc.edu:mpispawn_3][read_size] Unexpected End-Of-File on file descriptor 8. MPI process died?
+[gcn-18-27.sdsc.edu:mpispawn_3][handle_mt_peer] Error while reading PMI socket. MPI process died?
+[gcn-18-23.sdsc.edu:mpispawn_2][read_size] Unexpected End-Of-File on file descriptor 8. MPI process died?
+[gcn-18-23.sdsc.edu:mpispawn_2][read_size] Unexpected End-Of-File on file descriptor 8. MPI process died?
+[gcn-18-23.sdsc.edu:mpispawn_2][handle_mt_peer] Error while reading PMI socket. MPI process died?
+[gcn-19-58.sdsc.edu:mpispawn_11][read_size] Unexpected End-Of-File on file descriptor 8. MPI process died?
+[gcn-19-58.sdsc.edu:mpispawn_11][read_size] Unexpected End-Of-File on file descriptor 8. MPI process died?
+[gcn-19-58.sdsc.edu:mpispawn_11][handle_mt_peer] Error while reading PMI socket. MPI process die[gcn-20-58.sdsc.edu:mpispawn_17][read_size] Unexpected End-Of-File on file descriptor 8. MPI process died?
+[gcn-20-58.sdsc.edu:mpispawn_17][read_size] Unexpected End-Of-File on file descriptor 8. MPI process died?
+[gcn-20-58.sdsc.edu:mpispawn_17][handle_mt_peer] Error while reading PMI socket. MPI process died?
+d?

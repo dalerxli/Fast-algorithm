@@ -1,0 +1,8 @@
+export LD_LIBRARY_PATH=~/local/lib:/usr/lib:~/local/src/armadillo-3.6.2:$LD_LIBRARY_PATH 
+export PATH=~/local/bin:/usr/bin:~/local/src/petsc-3.3-p6/bin:$PATH
+
+export LIBRARY_PATH=~/local/lib:/usr/lib:~/local/src/petsc-3.3-p6/arch-linux2-c-debug/lib:$LIBRARY_PATH
+
+export PETSC_DIR=$HOME/local/src/petsc-3.3-p6
+export PETSC_ARCH=arch-linux2-c-debug
+export PETSC_LIB=~/local/src/petsc-3.3-p6/arch-linux2-c-debug/lib

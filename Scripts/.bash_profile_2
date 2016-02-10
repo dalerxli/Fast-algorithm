@@ -1,0 +1,7 @@
+export LD_LIBRARY_PATH=~/local/lib:$LD_LIBRARY_PATH 
+export PATH=~/local/bin:$PATH
+export LAPACK=~/local/src/lapack-3.4.2/liblapack.a
+export BLAS=~/local/src/BLAS/libfblas.a
+export LIBRARY_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/4.5.4:$LIBRARY_PATH
+CFLAGS="march=generic -O2 -pipe" 
+CXXFLAGS="${CFLAGS}"
