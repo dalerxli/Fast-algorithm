@@ -1,7 +1,0 @@
-
-WARNING: Volume of the domain containing particles should be positive. Set the default value!
-WARNING: Particle radius should be positive and less than the domain size. Set the default value!
-WARNING: Distance between neighboring particles should be positive, greater than the radius of a particle, and less than the domain size. Set the default value!
-WARNING: Original refraction should not be zero. Set the default value!
-WARNING: Desired refraction should not be zero. Set the default value!
-WARNING: Distribution of particles should be positive. Set the default value!
