@@ -1,51 +1,54 @@
 Compile:
--------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------
 .build
 or: 
 make
 
 
 Run:
--------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------
 mpirun -n <number_of_processors> ./<binary_file> -n <size> -ksp_type <type> -pc_type <type> -ksp_monitor -ksp_rtol <rtol> -log_summary
 or:
 mpiexec -n <number_of_processors> ./<binary_file> <options>
 
 
 Help:
--------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------
 scat -h
 
 
 Submit job:
--------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------
 qsub run.sh
 qsub -q '*@@elf*' scat9a.sh
 qsub -q '*@@elves' scat9a.sh
 
 Requirements: 
--------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------
 MPICH, LAPACK, BLAS, PETSC, mpiCC, ACML, FFTW
 locate libacml.so
 
 
 Top iterative methods with respect to least error(from top to bottom):
--------------------------------------------------------------------------------------------------------------------------------------
-specest
+----------------------------------------------------------------------------
 bcgs, bcgsl,fbcgs
 cgs
 tfqmr 
 cr
-gmres, lgmres, fgmres  
+gmres, lgmres, fgmres, specest  
 cg (runs fastest)
 minres
 symmlq 
 
 
 Notes
--------------------------------------------------------------------------------------------------------------------------------------
-- use #include 'mpif.h' to work with mpif90.gfortran. Do not use "use mpi"
-- Configure PETSC: 
+----------------------------------------------------------------------------
+1. Single precision: use cg
+   Double precision: use gmres
+
+2. use #include 'mpif.h' to work with mpif90.gfortran. Do not use "use mpi"
+
+3. Configure PETSC: 
 ./configure --with-scalar-type=complex --with-precision=double --with-pthreadclasses --with-debugging=no --with-fortran-kernels=generic
 ./configure --with-scalar-type=complex --with-precision=single --with-debugging=no '--with-64-bit-indices=1'
 python2 './configure' '--with-scalar-type=complex' '--with-precision=double' '--with-debugging=no' '--with-fftw=1' '--download-fftw' '--download-f-blas-lapack' '--with-fortran-kernels=generic'
